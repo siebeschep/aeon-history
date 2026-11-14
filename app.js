@@ -143,7 +143,7 @@ function vTop() {
   const tabs = [["timeline", t("timeline")], ["cards", t("cards")]].concat(st.isAdmin ? [["admin", t("admin")]] : []);
   const s = st.stats;
   return `<div class="top"><span class="logo">⏳ Aeon</span><div class="tabs">${tabs.map(([k, n]) => `<button class="tab ${st.v.tab === k ? "on" : ""}" data-act="tab" data-v="${k}">${n}</button>`).join("")}</div>
-  <span class="pill">🔥 ${s.streak}</span><span class="pill">⭐ ${s.xp}</span><button class="lang" data-act="lang">${st.lang.toUpperCase()}</button>
+  <span class="pill fire">🔥 ${s.streak}</span><span class="pill xp">⭐ ${s.xp}</span><button class="lang" data-act="lang">${st.lang.toUpperCase()}</button>
   ${st.user ? `<button class="lang" data-act="logout">${t("logout")}</button>` : `<button class="lang" data-act="tab" data-v="auth">${t("login")}</button>`}</div>`;
 }
 function vSide() {
@@ -153,10 +153,11 @@ function vSide() {
   <div style="margin-top:10px"><b>${t("total")}</b>: ${done}/${all.length}</div><div class="bar"><i style="width:${all.length ? done / all.length * 100 : 0}%"></i></div></div>
   <div class="tl">${st.chapters.map(c => `<button class="ch ${st.v.ch === c.id && st.v.tab === "timeline" ? "on" : ""}" style="--c:${esc(c.color)}" data-act="chapter" data-id="${esc(c.id)}"><b>${esc(c.emoji)} ${esc(chName(c))}</b><small>${esc(chRange(c))}</small><div class="p"><i style="width:${pct(c.id)}%"></i></div></button>`).join("")}</div></aside>`;
 }
+const PATH_X = [0, -44, -64, -44, 0, 44, 64, 44];
 function vTimeline() {
   const c = chOf(st.v.ch); if (!c) return "";
-  return `<div class="hero" style="--c:${esc(c.color)}"><div class="e">${esc(c.emoji)}</div><div><h1>${esc(chName(c))}</h1><p>${esc(chRange(c))}</p></div></div>
-  <div class="tline" style="--c:${esc(c.color)}">${inCh(c.id).map(l => { const d = gl(l); return `<div class="node ${st.done.has(l.id) ? "done" : ""}"><div class="lc" data-act="open" data-id="${esc(l.id)}"><span class="go">${st.done.has(l.id) ? "✅" : t("open") + " ›"}</span><span class="when">${esc(d.w)}</span><h3>${esc(d.ti)}</h3><p>${esc(d.tx.length > 150 ? d.tx.slice(0, 150).trimEnd() + "…" : d.tx)}</p></div></div>`; }).join("")}</div>`;
+  return `<div class="hero" style="--c:${esc(c.color)}"><div><h1>${esc(chName(c))}</h1><p>${esc(chRange(c))}</p></div><div class="e">${esc(c.emoji)}</div></div>
+  <div class="path" style="--c:${esc(c.color)}">${inCh(c.id).map((l, i) => { const d = gl(l), done = st.done.has(l.id); return `<div class="pn" style="--x:${PATH_X[i % PATH_X.length]}px"><button class="pbtn ${done ? "done" : ""}" data-act="open" data-id="${esc(l.id)}" aria-label="${esc(d.ti)}">${done ? "✓" : esc(c.emoji)}</button><div class="pl"><b>${esc(d.ti)}</b><small>${esc(d.w)}</small></div></div>`; }).join("")}</div>`;
 }
 function vLesson() {
   const v = st.v, l = st.lessons.find(x => x.id === v.lessonId); if (!l) return vTimeline();
@@ -169,11 +170,12 @@ function vLesson() {
     let foot = "";
     if (v.picked !== null) {
       const right_ = v.order[v.picked] === 0, a = ordered(), nx = a[a.findIndex(x => x.id === l.id) + 1];
-      foot = `<div class="expl"><b>${right_ ? "✅ " + t("ok") : "❌ " + t("wrong")}</b>${d.x ? "<br>" + esc(d.x) : ""}</div>` +
-        (right_ ? `<div class="expl" style="margin-top:10px;text-align:center"><div style="font-size:34px">${esc(c.emoji)}</div><b>${t("unlocked")}</b> · ${esc(d.ti)}</div>` : `<button class="btn sec" data-act="start">${t("again")}</button>`) +
-        (nx ? `<button class="btn" data-act="open" data-id="${esc(nx.id)}">${t("next")} ›</button>` : "") + `<button class="btn sec" data-act="home">${t("tl")}</button>`;
+      const correct = d.o[0];
+      foot = right_
+        ? `<div class="fb ok"><div><div class="fbt">✅ ${t("ok")}</div><div class="fbx">${esc(d.x)}</div></div><div class="fbb"><button class="btn sec" data-act="home">${t("tl")}</button>${nx ? `<button class="btn" data-act="open" data-id="${esc(nx.id)}">${t("next")}</button>` : ""}</div></div>`
+        : `<div class="fb bad"><div><div class="fbt">❌ ${t("wrong")}</div><div class="fbx">${esc(correct)}${d.x ? " — " + esc(d.x) : ""}</div></div><div class="fbb"><button class="btn sec" data-act="home">${t("tl")}</button><button class="btn red" data-act="start">${t("again")}</button></div></div>`;
     }
-    right = `<div class="card q"><h2>${esc(d.q)}</h2>${opts}${foot}</div>`;
+    right = `<div class="card q"><h2>${esc(d.q)}</h2>${opts}</div>${foot}`;
   }
   return `<button class="back" data-act="home">${t("back")}</button><div class="split" style="--c:${esc(c.color)}">${left}${right}</div>`;
 }
@@ -219,7 +221,7 @@ function render() {
   else if (v.tab === "admin" && st.isAdmin) main = vAdmin();
   else main = v.lessonId ? vLesson() : vTimeline();
   const warn = !st.user && v.tab !== "auth" ? `<div class="warn">${t("guest")} <button class="link" data-act="tab" data-v="auth" style="margin:0 0 0 8px">${t("login")}</button></div>` : "";
-  $root.innerHTML = vTop() + `<div class="layout">${st.loaded && !st.error ? vSide() : "<div></div>"}<main class="main">${warn}${main}</main></div>`;
+  $root.innerHTML = vTop() + `<div class="layout">${st.loaded && !st.error ? vSide() : "<div></div>"}<main class="main ${v.picked !== null && v.lessonId ? "pad" : ""}">${warn}${main}</main></div>`;
 }
 
 /* ---------- events ---------- */
