@@ -1,0 +1,3416 @@
+{
+ "chapters": [
+  {
+   "id": "universe",
+   "sort": 0,
+   "emoji": "🌌",
+   "color": "#7b6cff",
+   "name_en": "The Universe",
+   "name_nl": "Het heelal",
+   "range_en": "13.8 – 4.6 billion years ago",
+   "range_nl": "13,8 – 4,6 miljard jaar geleden",
+   "yr_from": -13800000000.0,
+   "yr_to": -4600000000.0
+  },
+  {
+   "id": "earth",
+   "sort": 1,
+   "emoji": "🌍",
+   "color": "#2fb3a6",
+   "name_en": "Earth & Life",
+   "name_nl": "Aarde & leven",
+   "range_en": "4.54 billion – 66 million years ago",
+   "range_nl": "4,54 miljard – 66 miljoen jaar geleden",
+   "yr_from": -4540000000.0,
+   "yr_to": -66000000.0
+  },
+  {
+   "id": "humans",
+   "sort": 2,
+   "emoji": "🦴",
+   "color": "#d98e4a",
+   "name_en": "Early Humans",
+   "name_nl": "Vroege mensen",
+   "range_en": "3.2 million years ago – 10,000 BCE",
+   "range_nl": "3,2 miljoen jaar geleden – 10.000 v.Chr.",
+   "yr_from": -3200000.0,
+   "yr_to": -10000
+  },
+  {
+   "id": "first",
+   "sort": 3,
+   "emoji": "🏺",
+   "color": "#e0b341",
+   "name_en": "First Civilizations",
+   "name_nl": "Eerste beschavingen",
+   "range_en": "3500 – 1000 BCE",
+   "range_nl": "3500 – 1000 v.Chr.",
+   "yr_from": -3500,
+   "yr_to": -1000
+  },
+  {
+   "id": "classical",
+   "sort": 4,
+   "emoji": "🏛️",
+   "color": "#ef6f6c",
+   "name_en": "The Classical World",
+   "name_nl": "De klassieke wereld",
+   "range_en": "508 BCE – 476 CE",
+   "range_nl": "508 v.Chr. – 476 n.Chr.",
+   "yr_from": -508,
+   "yr_to": 476
+  },
+  {
+   "id": "medieval",
+   "sort": 5,
+   "emoji": "🏰",
+   "color": "#9b6bd6",
+   "name_en": "The Middle Ages",
+   "name_nl": "De middeleeuwen",
+   "range_en": "476 – 1450",
+   "range_nl": "476 – 1450",
+   "yr_from": 476,
+   "yr_to": 1450
+  },
+  {
+   "id": "early",
+   "sort": 6,
+   "emoji": "🧭",
+   "color": "#3ea0e8",
+   "name_en": "Early Modern Era",
+   "name_nl": "Vroegmoderne tijd",
+   "range_en": "1450 – 1800",
+   "range_nl": "1450 – 1800",
+   "yr_from": 1450,
+   "yr_to": 1800
+  },
+  {
+   "id": "modern",
+   "sort": 7,
+   "emoji": "🏭",
+   "color": "#4cc56f",
+   "name_en": "The Modern World",
+   "name_nl": "De moderne wereld",
+   "range_en": "1800 – today",
+   "range_nl": "1800 – vandaag",
+   "yr_from": 1800,
+   "yr_to": null
+  }
+ ],
+ "lessons": [
+  {
+   "id": "u1",
+   "chapter": "universe",
+   "sort": 0,
+   "yr": -13800000000.0,
+   "emoji": "💥",
+   "rarity": "legendary",
+   "img": null,
+   "en": {
+    "w": "13.8 billion years ago",
+    "ti": "The Big Bang",
+    "tx": "The universe began about 13.8 billion years ago from an extremely hot, dense state and has been expanding ever since. Within minutes it formed the first atomic nuclei, mostly hydrogen and helium."
+   },
+   "nl": {
+    "w": "13,8 miljard jaar geleden",
+    "ti": "De oerknal",
+    "tx": "Het heelal ontstond ongeveer 13,8 miljard jaar geleden uit een extreem hete, dichte toestand en dijt sindsdien uit. Binnen enkele minuten ontstonden de eerste atoomkernen, vooral waterstof en helium."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "How old is the universe?",
+      "o": [
+       "About 13.8 billion years",
+       "About 4.6 billion years",
+       "About 100 million years",
+       "About 1 trillion years"
+      ],
+      "x": "Measurements of the cosmic microwave background give about 13.8 billion years."
+     },
+     "nl": {
+      "q": "Hoe oud is het heelal?",
+      "o": [
+       "Ongeveer 13,8 miljard jaar",
+       "Ongeveer 4,6 miljard jaar",
+       "Ongeveer 100 miljoen jaar",
+       "Ongeveer 1 biljoen jaar"
+      ],
+      "x": "Metingen van de kosmische achtergrondstraling geven ongeveer 13,8 miljard jaar."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "The universe is still expanding today.",
+      "x": "Galaxies keep moving apart, and the expansion is even speeding up."
+     },
+     "nl": {
+      "q": "Het heelal dijt vandaag nog steeds uit.",
+      "x": "Sterrenstelsels bewegen nog altijd uit elkaar, en de uitdijing versnelt zelfs."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which elements formed in the first minutes after the Big Bang?",
+      "o": [
+       "Mostly hydrogen and helium",
+       "Carbon and oxygen",
+       "Iron and gold",
+       "Uranium and lead"
+      ],
+      "x": "Heavier elements were forged much later, inside stars."
+     },
+     "nl": {
+      "q": "Welke elementen ontstonden in de eerste minuten na de oerknal?",
+      "o": [
+       "Vooral waterstof en helium",
+       "Koolstof en zuurstof",
+       "IJzer en goud",
+       "Uranium en lood"
+      ],
+      "x": "Zwaardere elementen werden pas veel later gevormd, in sterren."
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "chapter": "universe",
+   "sort": 1,
+   "yr": -13799600000.0,
+   "emoji": "✨",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "380,000 years after the Big Bang",
+    "ti": "The first light",
+    "tx": "For its first 380,000 years the universe was a hot, glowing fog in which light could not travel freely. When it had cooled to about 2,700 °C, electrons and atomic nuclei joined into atoms and space became transparent. That first light still reaches us today as the cosmic microwave background, discovered by accident in 1965 by Arno Penzias and Robert Wilson."
+   },
+   "nl": {
+    "w": "380.000 jaar na de oerknal",
+    "ti": "Het eerste licht",
+    "tx": "De eerste 380.000 jaar was het heelal een hete, gloeiende mist waarin licht zich niet vrij kon voortbewegen. Toen het was afgekoeld tot ongeveer 2700 °C, vormden elektronen en atoomkernen samen atomen en werd de ruimte doorzichtig. Dat eerste licht bereikt ons vandaag nog als de kosmische achtergrondstraling, in 1965 bij toeval ontdekt door Arno Penzias en Robert Wilson."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What is the cosmic microwave background?",
+      "o": [
+       "The oldest light in the universe",
+       "Light from the first stars",
+       "Radio noise from the Sun",
+       "Heat from the Earth's core"
+      ],
+      "x": "It was released about 380,000 years after the Big Bang, when space became transparent."
+     },
+     "nl": {
+      "q": "Wat is de kosmische achtergrondstraling?",
+      "o": [
+       "Het oudste licht in het heelal",
+       "Licht van de eerste sterren",
+       "Radioruis van de zon",
+       "Warmte uit de aardkern"
+      ],
+      "x": "Ze kwam vrij ongeveer 380.000 jaar na de oerknal, toen de ruimte doorzichtig werd."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "Right after the Big Bang, light could travel freely through space.",
+      "x": "For about 380,000 years the universe was an opaque fog of charged particles."
+     },
+     "nl": {
+      "q": "Meteen na de oerknal kon licht zich vrij door de ruimte bewegen.",
+      "x": "Ongeveer 380.000 jaar lang was het heelal een ondoorzichtige mist van geladen deeltjes."
+     }
+    },
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year was the cosmic microwave background discovered?",
+      "o": [
+       "1965",
+       "1905",
+       "1929",
+       "1989"
+      ],
+      "x": "In 1965, by Penzias and Wilson. They received the Nobel Prize for it in 1978."
+     },
+     "nl": {
+      "q": "In welk jaar werd de kosmische achtergrondstraling ontdekt?",
+      "o": [
+       "1965",
+       "1905",
+       "1929",
+       "1989"
+      ],
+      "x": "In 1965, door Penzias en Wilson. Ze kregen er in 1978 de Nobelprijs voor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "chapter": "universe",
+   "sort": 2,
+   "yr": -13500000000.0,
+   "emoji": "🌟",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "Over 13 billion years ago",
+    "ti": "First stars and galaxies",
+    "tx": "The first stars lit up within a few hundred million years after the Big Bang. Inside stars and in supernova explosions, heavier elements like carbon, oxygen and iron were forged."
+   },
+   "nl": {
+    "w": "Meer dan 13 miljard jaar geleden",
+    "ti": "Eerste sterren en sterrenstelsels",
+    "tx": "De eerste sterren gingen aan binnen enkele honderden miljoenen jaren na de oerknal. In sterren en bij supernova-explosies ontstonden zwaardere elementen zoals koolstof, zuurstof en ijzer."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Where were elements heavier than hydrogen and helium mostly made?",
+      "o": [
+       "Inside stars and supernovae",
+       "In the Big Bang itself",
+       "In black holes only",
+       "On planets"
+      ],
+      "x": "Fusion in stars and supernova explosions created most heavier elements. We are made of star dust."
+     },
+     "nl": {
+      "q": "Waar ontstonden de elementen zwaarder dan waterstof en helium grotendeels?",
+      "o": [
+       "In sterren en supernova's",
+       "In de oerknal zelf",
+       "Enkel in zwarte gaten",
+       "Op planeten"
+      ],
+      "x": "Kernfusie in sterren en supernova-explosies maakte de meeste zwaardere elementen. Wij zijn gemaakt van sterrenstof."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "The first stars lit up within a few hundred million years after the Big Bang.",
+      "x": "The universe was still very young then: less than 5% of its present age."
+     },
+     "nl": {
+      "q": "De eerste sterren ontstonden binnen enkele honderden miljoenen jaren na de oerknal.",
+      "x": "Het heelal was toen nog heel jong: minder dan 5% van zijn huidige leeftijd."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "The Big Bang",
+       "The first atoms form",
+       "The first stars light up",
+       "The Solar System forms"
+      ],
+      "x": "Big Bang (13.8 billion years ago), atoms (380,000 years later), stars (a few hundred million years later), Solar System (4.6 billion years ago)."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "De oerknal",
+       "De eerste atomen ontstaan",
+       "De eerste sterren ontbranden",
+       "Het zonnestelsel ontstaat"
+      ],
+      "x": "Oerknal (13,8 miljard jaar geleden), atomen (380.000 jaar later), sterren (enkele honderden miljoenen jaren later), zonnestelsel (4,6 miljard jaar geleden)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "chapter": "universe",
+   "sort": 3,
+   "yr": -13000000000.0,
+   "emoji": "🌀",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "Around 13 billion years ago",
+    "ti": "The Milky Way",
+    "tx": "Our home galaxy, the Milky Way, began forming more than 13 billion years ago and grew by swallowing smaller galaxies. It is a barred spiral about 100,000 light-years across, with a few hundred billion stars. At its centre sits a supermassive black hole, Sagittarius A*. The Sun circles that centre once every 230 million years or so."
+   },
+   "nl": {
+    "w": "Ongeveer 13 miljard jaar geleden",
+    "ti": "De Melkweg",
+    "tx": "Ons eigen sterrenstelsel, de Melkweg, begon meer dan 13 miljard jaar geleden te ontstaan en groeide door kleinere stelsels op te slokken. Het is een balkspiraalstelsel van ongeveer 100.000 lichtjaar breed, met enkele honderden miljarden sterren. In het centrum zit een superzwaar zwart gat, Sagittarius A*. De zon draait ongeveer één keer per 230 miljoen jaar rond dat centrum."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What kind of galaxy is the Milky Way?",
+      "o": [
+       "A barred spiral galaxy",
+       "An elliptical galaxy",
+       "An irregular galaxy",
+       "A ring galaxy"
+      ],
+      "x": "A spiral with a bar of stars through its centre."
+     },
+     "nl": {
+      "q": "Wat voor sterrenstelsel is de Melkweg?",
+      "o": [
+       "Een balkspiraalstelsel",
+       "Een elliptisch stelsel",
+       "Een onregelmatig stelsel",
+       "Een ringstelsel"
+      ],
+      "x": "Een spiraal met een balk van sterren door het centrum."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What lies at the centre of the Milky Way?",
+      "o": [
+       "A supermassive black hole",
+       "The Sun",
+       "A giant planet",
+       "Nothing: it is empty"
+      ],
+      "x": "Sagittarius A*, about four million times the mass of the Sun."
+     },
+     "nl": {
+      "q": "Wat bevindt zich in het centrum van de Melkweg?",
+      "o": [
+       "Een superzwaar zwart gat",
+       "De zon",
+       "Een reuzenplaneet",
+       "Niets: het is leeg"
+      ],
+      "x": "Sagittarius A*, ongeveer vier miljoen keer zo zwaar als de zon."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "The Sun needs about 230 million years to circle the centre of the Milky Way once.",
+      "x": "One such lap is sometimes called a galactic year."
+     },
+     "nl": {
+      "q": "De zon heeft ongeveer 230 miljoen jaar nodig voor één rondje om het centrum van de Melkweg.",
+      "x": "Zo'n rondje wordt soms een galactisch jaar genoemd."
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "chapter": "universe",
+   "sort": 4,
+   "yr": -4600000000.0,
+   "emoji": "☀️",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "4.6 billion years ago",
+    "ti": "Birth of the Solar System",
+    "tx": "A cloud of gas and dust collapsed under gravity. The Sun formed at the centre and the planets formed from the leftover disc. The four inner planets are rocky; farther out, where it was cold enough for ice, the giant planets formed."
+   },
+   "nl": {
+    "w": "4,6 miljard jaar geleden",
+    "ti": "Geboorte van het zonnestelsel",
+    "tx": "Een wolk van gas en stof stortte in door zwaartekracht. De zon ontstond in het midden en de planeten uit de overgebleven schijf. De vier binnenste planeten zijn rotsachtig; verder weg, waar het koud genoeg was voor ijs, ontstonden de reuzenplaneten."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "How old is the Solar System?",
+      "o": [
+       "About 4.6 billion years",
+       "About 13.8 billion years",
+       "About 1 billion years",
+       "About 500 million years"
+      ],
+      "x": "Dating of meteorites gives about 4.6 billion years."
+     },
+     "nl": {
+      "q": "Hoe oud is het zonnestelsel?",
+      "o": [
+       "Ongeveer 4,6 miljard jaar",
+       "Ongeveer 13,8 miljard jaar",
+       "Ongeveer 1 miljard jaar",
+       "Ongeveer 500 miljoen jaar"
+      ],
+      "x": "Datering van meteorieten geeft ongeveer 4,6 miljard jaar."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What did the planets form from?",
+      "o": [
+       "The disc of gas and dust left over around the young Sun",
+       "Pieces thrown out of the Sun",
+       "Material captured from other stars",
+       "Exploded moons"
+      ],
+      "x": "Dust clumped together into ever larger bodies, and finally planets."
+     },
+     "nl": {
+      "q": "Waaruit ontstonden de planeten?",
+      "o": [
+       "De schijf van gas en stof die rond de jonge zon overbleef",
+       "Stukken die uit de zon werden geslingerd",
+       "Materiaal dat van andere sterren werd ingevangen",
+       "Ontplofte manen"
+      ],
+      "x": "Stof klonterde samen tot steeds grotere brokken, en uiteindelijk planeten."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "The four planets closest to the Sun are gas giants.",
+      "x": "Mercury, Venus, Earth and Mars are rocky planets."
+     },
+     "nl": {
+      "q": "De vier planeten het dichtst bij de zon zijn gasreuzen.",
+      "x": "Mercurius, Venus, de aarde en Mars zijn rotsplaneten."
+     }
+    }
+   ]
+  },
+  {
+   "id": "e1",
+   "chapter": "earth",
+   "sort": 5,
+   "yr": -4540000000.0,
+   "emoji": "🌙",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "4.54 billion years ago",
+    "ti": "Earth and the Moon",
+    "tx": "Earth formed about 4.54 billion years ago. The leading theory says the Moon formed soon after, when a Mars-sized body hit the young Earth. That body is nicknamed Theia. The young Earth was a ball of molten rock; as it cooled, a crust formed and water gathered into oceans."
+   },
+   "nl": {
+    "w": "4,54 miljard jaar geleden",
+    "ti": "Aarde en maan",
+    "tx": "De aarde ontstond ongeveer 4,54 miljard jaar geleden. Volgens de meest aanvaarde theorie ontstond de maan kort daarna toen een object ter grootte van Mars de jonge aarde raakte. Dat object kreeg de bijnaam Theia. De jonge aarde was een bol gesmolten gesteente; bij het afkoelen vormde zich een korst en verzamelde water zich in oceanen."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "How did the Moon most likely form?",
+      "o": [
+       "A Mars-sized body hit the young Earth",
+       "A passing comet was captured by Earth",
+       "It split off from Mars",
+       "It formed from solar flares"
+      ],
+      "x": "The giant-impact hypothesis best explains the Moon's composition."
+     },
+     "nl": {
+      "q": "Hoe ontstond de maan waarschijnlijk?",
+      "o": [
+       "Een object ter grootte van Mars raakte de jonge aarde",
+       "Een voorbijkomende komeet werd ingevangen",
+       "Ze brak af van Mars",
+       "Ze ontstond uit zonnevlammen"
+      ],
+      "x": "De 'giant impact'-hypothese verklaart de samenstelling van de maan het best."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "How old is the Earth?",
+      "o": [
+       "About 4.54 billion years",
+       "About 13.8 billion years",
+       "About 454 million years",
+       "About 45 million years"
+      ],
+      "x": "Roughly a third of the age of the universe."
+     },
+     "nl": {
+      "q": "Hoe oud is de aarde?",
+      "o": [
+       "Ongeveer 4,54 miljard jaar",
+       "Ongeveer 13,8 miljard jaar",
+       "Ongeveer 454 miljoen jaar",
+       "Ongeveer 45 miljoen jaar"
+      ],
+      "x": "Ruwweg een derde van de leeftijd van het heelal."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "The Moon is much older than the Earth.",
+      "x": "The Moon formed shortly after the Earth, from the debris of a giant impact."
+     },
+     "nl": {
+      "q": "De maan is veel ouder dan de aarde.",
+      "x": "De maan ontstond kort na de aarde, uit het puin van een reusachtige botsing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "e2",
+   "chapter": "earth",
+   "sort": 6,
+   "yr": -3700000000.0,
+   "emoji": "🦠",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "3.5–3.8 billion years ago",
+    "ti": "The first life",
+    "tx": "The oldest traces of life are single-celled microbes in the oceans. For billions of years life stayed microscopic. Some of the oldest fossils are stromatolites: layered rocks built up by mats of microbes."
+   },
+   "nl": {
+    "w": "3,5–3,8 miljard jaar geleden",
+    "ti": "Het eerste leven",
+    "tx": "De oudste sporen van leven zijn eencellige microben in de oceanen. Miljarden jaren bleef leven microscopisch klein. Tot de oudste fossielen behoren stromatolieten: gelaagde gesteenten die door matten van microben werden opgebouwd."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What were the first living things?",
+      "o": [
+       "Single-celled microorganisms",
+       "Small fish",
+       "Plants",
+       "Insects"
+      ],
+      "x": "Fossils and chemical traces show microbial life at least 3.5 billion years ago."
+     },
+     "nl": {
+      "q": "Wat waren de eerste levende wezens?",
+      "o": [
+       "Eencellige micro-organismen",
+       "Kleine vissen",
+       "Planten",
+       "Insecten"
+      ],
+      "x": "Fossielen en chemische sporen tonen microbieel leven minstens 3,5 miljard jaar geleden."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What are stromatolites?",
+      "o": [
+       "Layered rocks built by mats of microbes",
+       "The first fish",
+       "Meteorites from Mars",
+       "Fossil tree trunks"
+      ],
+      "x": "They are among the oldest evidence of life, up to about 3.5 billion years old."
+     },
+     "nl": {
+      "q": "Wat zijn stromatolieten?",
+      "o": [
+       "Gelaagde gesteenten, opgebouwd door matten van microben",
+       "De eerste vissen",
+       "Meteorieten van Mars",
+       "Fossiele boomstammen"
+      ],
+      "x": "Ze behoren tot de oudste sporen van leven, tot ongeveer 3,5 miljard jaar oud."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "For billions of years, all life on Earth was microscopic.",
+      "x": "Larger, complex organisms only appeared in the last 600 million years or so."
+     },
+     "nl": {
+      "q": "Miljarden jaren lang was al het leven op aarde microscopisch klein.",
+      "x": "Grotere, complexe organismen verschenen pas in de laatste 600 miljoen jaar."
+     }
+    }
+   ]
+  },
+  {
+   "id": "e3",
+   "chapter": "earth",
+   "sort": 7,
+   "yr": -2400000000.0,
+   "emoji": "💨",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "About 2.4 billion years ago",
+    "ti": "The Great Oxidation",
+    "tx": "Cyanobacteria began producing oxygen by photosynthesis. Oxygen built up in the atmosphere, changing Earth's chemistry and making complex life possible later."
+   },
+   "nl": {
+    "w": "Ongeveer 2,4 miljard jaar geleden",
+    "ti": "De grote oxidatie",
+    "tx": "Cyanobacteriën begonnen zuurstof te produceren via fotosynthese. Zuurstof hoopte zich op in de atmosfeer, veranderde de chemie van de aarde en maakte later complex leven mogelijk."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which organisms first filled the air with oxygen?",
+      "o": [
+       "Cyanobacteria",
+       "Dinosaurs",
+       "Trees",
+       "Fungi"
+      ],
+      "x": "Photosynthesising cyanobacteria caused the Great Oxidation Event."
+     },
+     "nl": {
+      "q": "Welke organismen vulden de lucht als eerste met zuurstof?",
+      "o": [
+       "Cyanobacteriën",
+       "Dinosauriërs",
+       "Bomen",
+       "Schimmels"
+      ],
+      "x": "Fotosynthetiserende cyanobacteriën veroorzaakten de grote oxidatie."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "By which process did cyanobacteria produce oxygen?",
+      "o": [
+       "Photosynthesis",
+       "Fermentation",
+       "Volcanic eruptions",
+       "Combustion"
+      ],
+      "x": "They use sunlight, water and carbon dioxide, and release oxygen."
+     },
+     "nl": {
+      "q": "Door welk proces maakten cyanobacteriën zuurstof?",
+      "o": [
+       "Fotosynthese",
+       "Gisting",
+       "Vulkaanuitbarstingen",
+       "Verbranding"
+      ],
+      "x": "Ze gebruiken zonlicht, water en koolstofdioxide, en geven zuurstof af."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "The Earth forms",
+       "The first microbes appear",
+       "Oxygen builds up in the air",
+       "The dinosaurs die out"
+      ],
+      "x": "4.54 billion, about 3.7 billion, about 2.4 billion and 66 million years ago."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "De aarde ontstaat",
+       "De eerste microben verschijnen",
+       "Zuurstof hoopt zich op in de lucht",
+       "De dinosauriërs sterven uit"
+      ],
+      "x": "4,54 miljard, ongeveer 3,7 miljard, ongeveer 2,4 miljard en 66 miljoen jaar geleden."
+     }
+    }
+   ]
+  },
+  {
+   "id": "e5",
+   "chapter": "earth",
+   "sort": 8,
+   "yr": -538000000.0,
+   "emoji": "🐚",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "About 538 million years ago",
+    "ti": "The Cambrian explosion",
+    "tx": "For most of Earth's history, life was tiny and simple. Then, starting about 538 million years ago, the seas filled with a burst of new animals within a few tens of millions of years. Most major animal groups first appear in the fossil record at this time, including the first animals with eyes, shells and legs. Trilobites became some of the most common creatures of the era."
+   },
+   "nl": {
+    "w": "Ongeveer 538 miljoen jaar geleden",
+    "ti": "De Cambrische explosie",
+    "tx": "Het grootste deel van de geschiedenis van de aarde was het leven klein en eenvoudig. Vanaf ongeveer 538 miljoen jaar geleden vulden de zeeën zich in enkele tientallen miljoenen jaren met een uitbarsting van nieuwe dieren. De meeste grote diergroepen duiken in deze tijd voor het eerst op in de fossielen, waaronder de eerste dieren met ogen, schelpen en poten. Trilobieten werden een van de meest voorkomende dieren van die tijd."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What happened during the Cambrian explosion?",
+      "o": [
+       "Most major animal groups appeared in a relatively short time",
+       "A giant volcano destroyed most life",
+       "The first plants colonised the land",
+       "The dinosaurs appeared"
+      ],
+      "x": "In geological terms, a few tens of millions of years is short."
+     },
+     "nl": {
+      "q": "Wat gebeurde er tijdens de Cambrische explosie?",
+      "o": [
+       "De meeste grote diergroepen verschenen in relatief korte tijd",
+       "Een reusachtige vulkaan vernietigde het meeste leven",
+       "De eerste planten veroverden het land",
+       "De dinosauriërs verschenen"
+      ],
+      "x": "In geologische termen is enkele tientallen miljoenen jaren kort."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which animals were typical of the Cambrian seas?",
+      "o": [
+       "Trilobites",
+       "Whales",
+       "Crocodiles",
+       "Penguins"
+      ],
+      "x": "Trilobites were armoured sea animals, distantly related to today's crabs and insects."
+     },
+     "nl": {
+      "q": "Welke dieren waren typisch voor de Cambrische zeeën?",
+      "o": [
+       "Trilobieten",
+       "Walvissen",
+       "Krokodillen",
+       "Pinguïns"
+      ],
+      "x": "Trilobieten waren gepantserde zeedieren, verre verwanten van de huidige krabben en insecten."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "The Cambrian explosion took place on land.",
+      "x": "It happened in the seas. Plants and animals only moved onto land much later."
+     },
+     "nl": {
+      "q": "De Cambrische explosie vond plaats op het land.",
+      "x": "Ze speelde zich af in de zeeën. Planten en dieren trokken pas veel later het land op."
+     }
+    }
+   ]
+  },
+  {
+   "id": "e4",
+   "chapter": "earth",
+   "sort": 9,
+   "yr": -66000000.0,
+   "emoji": "☄️",
+   "rarity": "legendary",
+   "img": null,
+   "en": {
+    "w": "66 million years ago",
+    "ti": "The end of the dinosaurs",
+    "tx": "Non-avian dinosaurs ruled the land for over 150 million years. An asteroid impact at Chicxulub (Mexico) about 66 million years ago caused a mass extinction. Birds are their living descendants."
+   },
+   "nl": {
+    "w": "66 miljoen jaar geleden",
+    "ti": "Het einde van de dinosauriërs",
+    "tx": "Dinosauriërs (behalve vogels) domineerden het land meer dan 150 miljoen jaar. Een asteroïde-inslag bij Chicxulub (Mexico) zo'n 66 miljoen jaar geleden veroorzaakte een massauitsterving. Vogels zijn hun levende nakomelingen."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "When did the non-avian dinosaurs die out?",
+      "o": [
+       "66 million years ago",
+       "6.6 million years ago",
+       "660 million years ago",
+       "6,000 years ago"
+      ],
+      "x": "The Chicxulub impact marks the end of the Cretaceous, 66 million years ago."
+     },
+     "nl": {
+      "q": "Wanneer stierven de dinosauriërs (behalve vogels) uit?",
+      "o": [
+       "66 miljoen jaar geleden",
+       "6,6 miljoen jaar geleden",
+       "660 miljoen jaar geleden",
+       "6.000 jaar geleden"
+      ],
+      "x": "De inslag bij Chicxulub markeert het einde van het Krijt, 66 miljoen jaar geleden."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What caused the mass extinction 66 million years ago?",
+      "o": [
+       "An asteroid impact at Chicxulub, Mexico",
+       "A long ice age",
+       "A nearby supernova",
+       "A worldwide flood"
+      ],
+      "x": "The crater, about 180 km wide, lies partly under the Yucatán peninsula."
+     },
+     "nl": {
+      "q": "Wat veroorzaakte de massa-uitsterving van 66 miljoen jaar geleden?",
+      "o": [
+       "Een asteroïde-inslag bij Chicxulub in Mexico",
+       "Een lange ijstijd",
+       "Een nabije supernova",
+       "Een wereldwijde overstroming"
+      ],
+      "x": "De krater, ongeveer 180 km breed, ligt deels onder het schiereiland Yucatán."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "Birds are living descendants of dinosaurs.",
+      "x": "Birds evolved from small feathered dinosaurs."
+     },
+     "nl": {
+      "q": "Vogels zijn levende afstammelingen van dinosauriërs.",
+      "x": "Vogels zijn geëvolueerd uit kleine gevederde dinosauriërs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "h4",
+   "chapter": "humans",
+   "sort": 10,
+   "yr": -3200000.0,
+   "emoji": "🦶",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "About 3.2 million years ago",
+    "ti": "Walking upright: Lucy",
+    "tx": "Long before our own species existed, earlier relatives already walked on two legs. The most famous is Lucy, an Australopithecus afarensis who lived about 3.2 million years ago and was found in Ethiopia in 1974. She stood just over a metre tall and had a small, ape-sized brain. Walking upright freed the hands, and the oldest known stone tools are about 3.3 million years old."
+   },
+   "nl": {
+    "w": "Ongeveer 3,2 miljoen jaar geleden",
+    "ti": "Rechtop lopen: Lucy",
+    "tx": "Lang voor onze eigen soort bestond, liepen vroegere verwanten al op twee benen. De bekendste is Lucy, een Australopithecus afarensis die ongeveer 3,2 miljoen jaar geleden leefde en in 1974 in Ethiopië werd gevonden. Ze was iets meer dan een meter groot en had kleine hersenen, zo groot als die van een mensaap. Rechtop lopen maakte de handen vrij, en de oudste bekende stenen werktuigen zijn ongeveer 3,3 miljoen jaar oud."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who was Lucy?",
+      "o": [
+       "An early human relative who walked upright",
+       "The first Homo sapiens",
+       "A Neanderthal from Europe",
+       "The first farmer"
+      ],
+      "x": "She belonged to the species Australopithecus afarensis."
+     },
+     "nl": {
+      "q": "Wie was Lucy?",
+      "o": [
+       "Een vroege verwant van de mens die rechtop liep",
+       "De eerste Homo sapiens",
+       "Een neanderthaler uit Europa",
+       "De eerste boerin"
+      ],
+      "x": "Ze behoorde tot de soort Australopithecus afarensis."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "In which present-day country was Lucy found?",
+      "o": [
+       "Ethiopia",
+       "South Africa",
+       "France",
+       "China"
+      ],
+      "x": "At Hadar in Ethiopia, in 1974."
+     },
+     "nl": {
+      "q": "In welk huidig land werd Lucy gevonden?",
+      "o": [
+       "Ethiopië",
+       "Zuid-Afrika",
+       "Frankrijk",
+       "China"
+      ],
+      "x": "In Hadar in Ethiopië, in 1974."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "Our ancestors developed large brains before they began to walk upright.",
+      "x": "Lucy already walked upright, but her brain was still about as small as an ape's."
+     },
+     "nl": {
+      "q": "Onze voorouders kregen grote hersenen voordat ze rechtop gingen lopen.",
+      "x": "Lucy liep al rechtop, maar haar hersenen waren nog ongeveer zo klein als die van een mensaap."
+     }
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "chapter": "humans",
+   "sort": 11,
+   "yr": -300000,
+   "emoji": "👣",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "About 300,000 years ago",
+    "ti": "Homo sapiens appears",
+    "tx": "Our species evolved in Africa. The oldest known Homo sapiens fossils, from Jebel Irhoud in Morocco, are about 300,000 years old."
+   },
+   "nl": {
+    "w": "Ongeveer 300.000 jaar geleden",
+    "ti": "Homo sapiens verschijnt",
+    "tx": "Onze soort ontstond in Afrika. De oudst bekende fossielen van Homo sapiens, uit Jebel Irhoud in Marokko, zijn ongeveer 300.000 jaar oud."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Where did Homo sapiens first appear?",
+      "o": [
+       "Africa",
+       "Europe",
+       "Asia",
+       "Australia"
+      ],
+      "x": "The oldest fossils of our species come from Africa."
+     },
+     "nl": {
+      "q": "Waar verscheen Homo sapiens voor het eerst?",
+      "o": [
+       "Afrika",
+       "Europa",
+       "Azië",
+       "Australië"
+      ],
+      "x": "De oudste fossielen van onze soort komen uit Afrika."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "About how old are the oldest known Homo sapiens fossils?",
+      "o": [
+       "About 300,000 years",
+       "About 3 million years",
+       "About 30,000 years",
+       "About 3,000 years"
+      ],
+      "x": "They were dated in 2017 and made our species about 100,000 years older than previously thought."
+     },
+     "nl": {
+      "q": "Hoe oud zijn de oudste bekende fossielen van Homo sapiens ongeveer?",
+      "o": [
+       "Ongeveer 300.000 jaar",
+       "Ongeveer 3 miljoen jaar",
+       "Ongeveer 30.000 jaar",
+       "Ongeveer 3000 jaar"
+      ],
+      "x": "Ze werden in 2017 gedateerd en maakten onze soort ongeveer 100.000 jaar ouder dan gedacht."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Where were the oldest known Homo sapiens fossils found?",
+      "o": [
+       "Jebel Irhoud, Morocco",
+       "Lascaux, France",
+       "Beijing, China",
+       "The Neander Valley, Germany"
+      ],
+      "x": "Jebel Irhoud lies in western Morocco."
+     },
+     "nl": {
+      "q": "Waar werden de oudste bekende fossielen van Homo sapiens gevonden?",
+      "o": [
+       "Jebel Irhoud, Marokko",
+       "Lascaux, Frankrijk",
+       "Peking, China",
+       "Het Neandertal, Duitsland"
+      ],
+      "x": "Jebel Irhoud ligt in het westen van Marokko."
+     }
+    }
+   ]
+  },
+  {
+   "id": "h2",
+   "chapter": "humans",
+   "sort": 12,
+   "yr": -65000,
+   "emoji": "🚶",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "70,000–60,000 years ago",
+    "ti": "Out of Africa",
+    "tx": "The main dispersal of modern humans out of Africa happened roughly 70,000–60,000 years ago. They spread across Asia, reached Australia, and later Europe and the Americas."
+   },
+   "nl": {
+    "w": "70.000–60.000 jaar geleden",
+    "ti": "Uit Afrika",
+    "tx": "De belangrijkste verspreiding van moderne mensen uit Afrika gebeurde ruwweg 70.000–60.000 jaar geleden. Ze verspreidden zich over Azië, bereikten Australië en later Europa en Amerika."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Roughly when did the main spread of modern humans out of Africa happen?",
+      "o": [
+       "70,000–60,000 years ago",
+       "7,000 years ago",
+       "700,000 years ago",
+       "2,000 years ago"
+      ],
+      "x": "Genetic evidence points to a major dispersal around 70,000–60,000 years ago."
+     },
+     "nl": {
+      "q": "Wanneer vond de belangrijkste verspreiding van moderne mensen uit Afrika ongeveer plaats?",
+      "o": [
+       "70.000–60.000 jaar geleden",
+       "7.000 jaar geleden",
+       "700.000 jaar geleden",
+       "2.000 jaar geleden"
+      ],
+      "x": "Genetisch bewijs wijst op een grote migratie rond 70.000–60.000 jaar geleden."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "Modern humans reached Australia before they reached the Americas.",
+      "x": "Australia was reached at least 50,000 years ago, the Americas only much later."
+     },
+     "nl": {
+      "q": "Moderne mensen bereikten Australië eerder dan Amerika.",
+      "x": "Australië werd minstens 50.000 jaar geleden bereikt, Amerika pas veel later."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "In which order did modern humans settle these regions?",
+      "o": [
+       "Africa",
+       "Southern Asia",
+       "Australia",
+       "The Americas"
+      ],
+      "x": "Our species began in Africa, followed the coasts of Asia to Australia, and reached the Americas last."
+     },
+     "nl": {
+      "q": "In welke volgorde bevolkten moderne mensen deze gebieden?",
+      "o": [
+       "Afrika",
+       "Zuid-Azië",
+       "Australië",
+       "Amerika"
+      ],
+      "x": "Onze soort ontstond in Afrika, volgde de kusten van Azië tot Australië en bereikte Amerika als laatste."
+     }
+    }
+   ]
+  },
+  {
+   "id": "h5",
+   "chapter": "humans",
+   "sort": 13,
+   "yr": -43000,
+   "emoji": "🎨",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "From about 45,000 years ago",
+    "ti": "The first artists",
+    "tx": "At least 45,000 years ago people began painting animals and hand stencils on cave walls, from Sulawesi in Indonesia to Chauvet and Lascaux in France. They also carved figurines and made flutes from bone and ivory. Art, music and jewellery show that these people thought in symbols, just as we do."
+   },
+   "nl": {
+    "w": "Vanaf ongeveer 45.000 jaar geleden",
+    "ti": "De eerste kunstenaars",
+    "tx": "Minstens 45.000 jaar geleden begonnen mensen dieren en handafdrukken op grotwanden te schilderen, van Sulawesi in Indonesië tot Chauvet en Lascaux in Frankrijk. Ze sneden ook beeldjes en maakten fluiten van bot en ivoor. Kunst, muziek en sieraden tonen dat deze mensen in symbolen dachten, net als wij."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What did the earliest cave painters mainly depict?",
+      "o": [
+       "Animals and hand stencils",
+       "Maps of the stars",
+       "Kings and battles",
+       "Written stories"
+      ],
+      "x": "Bison, horses, deer and wild pigs are common subjects."
+     },
+     "nl": {
+      "q": "Wat beeldden de vroegste grotschilders vooral af?",
+      "o": [
+       "Dieren en handafdrukken",
+       "Sterrenkaarten",
+       "Koningen en veldslagen",
+       "Geschreven verhalen"
+      ],
+      "x": "Bizons, paarden, herten en wilde varkens komen vaak voor."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "On which Indonesian island were some of the oldest known cave paintings found?",
+      "o": [
+       "Sulawesi",
+       "Bali",
+       "Java",
+       "Sumatra"
+      ],
+      "x": "A painted wild pig there is more than 45,000 years old."
+     },
+     "nl": {
+      "q": "Op welk Indonesisch eiland werden enkele van de oudste bekende grotschilderingen gevonden?",
+      "o": [
+       "Sulawesi",
+       "Bali",
+       "Java",
+       "Sumatra"
+      ],
+      "x": "Een geschilderd wild varken is daar meer dan 45.000 jaar oud."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "People in the Ice Age already made musical instruments.",
+      "x": "Flutes of bird bone and mammoth ivory are about 40,000 years old."
+     },
+     "nl": {
+      "q": "Mensen in de ijstijd maakten al muziekinstrumenten.",
+      "x": "Fluiten van vogelbot en mammoetivoor zijn ongeveer 40.000 jaar oud."
+     }
+    }
+   ]
+  },
+  {
+   "id": "h3",
+   "chapter": "humans",
+   "sort": 14,
+   "yr": -10000,
+   "emoji": "🌾",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "About 10,000 BCE",
+    "ti": "The Neolithic Revolution",
+    "tx": "After the last Ice Age, people in the Fertile Crescent began growing crops and domesticating animals. Hunter-gatherers became farmers living in permanent villages."
+   },
+   "nl": {
+    "w": "Rond 10.000 v.Chr.",
+    "ti": "De neolithische revolutie",
+    "tx": "Na de laatste ijstijd begonnen mensen in de Vruchtbare Halvemaan gewassen te telen en dieren te domesticeren. Jagers-verzamelaars werden boeren in vaste dorpen."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What defined the Neolithic Revolution?",
+      "o": [
+       "The start of farming and settled life",
+       "The invention of the wheel",
+       "The first use of iron",
+       "The first writing"
+      ],
+      "x": "Farming allowed food surplus, villages and eventually cities."
+     },
+     "nl": {
+      "q": "Wat kenmerkte de neolithische revolutie?",
+      "o": [
+       "Het begin van landbouw en vaste woonplaatsen",
+       "De uitvinding van het wiel",
+       "Het eerste gebruik van ijzer",
+       "Het eerste schrift"
+      ],
+      "x": "Landbouw zorgde voor voedseloverschotten, dorpen en uiteindelijk steden."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "In which region did farming first begin?",
+      "o": [
+       "The Fertile Crescent",
+       "Scandinavia",
+       "Australia",
+       "The Amazon"
+      ],
+      "x": "The Fertile Crescent stretches from the Nile valley across the Levant to Mesopotamia."
+     },
+     "nl": {
+      "q": "In welke regio begon de landbouw het eerst?",
+      "o": [
+       "De Vruchtbare Halvemaan",
+       "Scandinavië",
+       "Australië",
+       "Het Amazonegebied"
+      ],
+      "x": "De Vruchtbare Halvemaan loopt van de Nijlvallei over de Levant tot Mesopotamië."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "Lucy walks upright",
+       "Homo sapiens appears",
+       "The first cave paintings",
+       "The first farming villages"
+      ],
+      "x": "About 3.2 million, 300,000, 45,000 and 12,000 years ago."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "Lucy loopt rechtop",
+       "Homo sapiens verschijnt",
+       "De eerste grotschilderingen",
+       "De eerste boerendorpen"
+      ],
+      "x": "Ongeveer 3,2 miljoen, 300.000, 45.000 en 12.000 jaar geleden."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "chapter": "first",
+   "sort": 15,
+   "yr": -3300,
+   "emoji": "🏙️",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "About 3500–3000 BCE",
+    "ti": "Sumer: the first cities",
+    "tx": "In southern Mesopotamia, between the Tigris and Euphrates, the Sumerians built cities like Uruk. Around 3200 BCE they developed cuneiform, one of the earliest writing systems. Scribes pressed its wedge-shaped signs into tablets of wet clay."
+   },
+   "nl": {
+    "w": "Rond 3500–3000 v.Chr.",
+    "ti": "Sumerië: de eerste steden",
+    "tx": "In Zuid-Mesopotamië, tussen Tigris en Eufraat, bouwden de Sumeriërs steden zoals Uruk. Rond 3200 v.Chr. ontwikkelden ze het spijkerschrift, een van de oudste schriftsystemen. Schrijvers drukten de wigvormige tekens in tabletten van natte klei."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What was the Sumerian writing system called?",
+      "o": [
+       "Cuneiform",
+       "Hieroglyphs",
+       "The Latin alphabet",
+       "Runes"
+      ],
+      "x": "Cuneiform: wedge-shaped marks pressed into clay."
+     },
+     "nl": {
+      "q": "Hoe heette het Sumerische schriftsysteem?",
+      "o": [
+       "Spijkerschrift",
+       "Hiërogliefen",
+       "Het Latijnse alfabet",
+       "Runen"
+      ],
+      "x": "Spijkerschrift: wigvormige tekens gedrukt in klei."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Between which two rivers did Sumer lie?",
+      "o": [
+       "The Tigris and the Euphrates",
+       "The Nile and the Congo",
+       "The Indus and the Ganges",
+       "The Rhine and the Danube"
+      ],
+      "x": "Mesopotamia means 'land between the rivers'."
+     },
+     "nl": {
+      "q": "Tussen welke twee rivieren lag Sumerië?",
+      "o": [
+       "De Tigris en de Eufraat",
+       "De Nijl en de Congo",
+       "De Indus en de Ganges",
+       "De Rijn en de Donau"
+      ],
+      "x": "Mesopotamië betekent 'land tussen de rivieren'."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "Cuneiform was written by pressing signs into clay.",
+      "x": "A reed stylus left wedge-shaped marks; 'cuneiform' means wedge-shaped."
+     },
+     "nl": {
+      "q": "Het spijkerschrift werd geschreven door tekens in klei te drukken.",
+      "x": "Een rietstift liet wigvormige afdrukken na die op spijkers lijken; vandaar de naam."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "chapter": "first",
+   "sort": 16,
+   "yr": -2560,
+   "emoji": "🏜️",
+   "rarity": "legendary",
+   "img": null,
+   "en": {
+    "w": "About 3100–2500 BCE",
+    "ti": "Ancient Egypt",
+    "tx": "Egypt was united around 3100 BCE under a pharaoh. The Great Pyramid of Giza, built about 2600–2500 BCE for pharaoh Khufu, was the tallest human-made structure for about 3,800 years. Life in Egypt depended on the yearly flood of the Nile, and scribes wrote in hieroglyphs."
+   },
+   "nl": {
+    "w": "Rond 3100–2500 v.Chr.",
+    "ti": "Het oude Egypte",
+    "tx": "Egypte werd rond 3100 v.Chr. verenigd onder een farao. De Grote Piramide van Gizeh, gebouwd rond 2600–2500 v.Chr. voor farao Choefoe, was zo'n 3.800 jaar lang het hoogste door mensen gebouwde bouwwerk. Het leven in Egypte hing af van de jaarlijkse overstroming van de Nijl, en schrijvers schreven in hiërogliefen."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "For which pharaoh was the Great Pyramid of Giza built?",
+      "o": [
+       "Khufu",
+       "Tutankhamun",
+       "Ramses II",
+       "Cleopatra"
+      ],
+      "x": "Khufu (Cheops) of the 4th dynasty."
+     },
+     "nl": {
+      "q": "Voor welke farao werd de Grote Piramide van Gizeh gebouwd?",
+      "o": [
+       "Choefoe",
+       "Toetanchamon",
+       "Ramses II",
+       "Cleopatra"
+      ],
+      "x": "Choefoe (Cheops) van de 4e dynastie."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "The Great Pyramid was the tallest human-made structure for about 3,800 years.",
+      "x": "Only around 1311 did the spire of Lincoln Cathedral in England rise higher."
+     },
+     "nl": {
+      "q": "De Grote Piramide was ongeveer 3800 jaar lang het hoogste bouwwerk van de mens.",
+      "x": "Pas rond 1311 kwam de torenspits van de kathedraal van Lincoln in Engeland hoger."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which river was the lifeline of ancient Egypt?",
+      "o": [
+       "The Nile",
+       "The Euphrates",
+       "The Indus",
+       "The Yellow River"
+      ],
+      "x": "Its yearly flood left fertile mud on the fields."
+     },
+     "nl": {
+      "q": "Welke rivier was de levensader van het oude Egypte?",
+      "o": [
+       "De Nijl",
+       "De Eufraat",
+       "De Indus",
+       "De Gele Rivier"
+      ],
+      "x": "De jaarlijkse overstroming liet vruchtbaar slib achter op de akkers."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "chapter": "first",
+   "sort": 17,
+   "yr": -2600,
+   "emoji": "🏘️",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "About 2600–1900 BCE",
+    "ti": "The Indus Valley Civilization",
+    "tx": "Along the Indus River, cities like Harappa and Mohenjo-daro had planned streets, brick houses and drainage systems. Their script is still undeciphered."
+   },
+   "nl": {
+    "w": "Rond 2600–1900 v.Chr.",
+    "ti": "De Indusbeschaving",
+    "tx": "Langs de Indus hadden steden als Harappa en Mohenjo-daro geplande straten, bakstenen huizen en riolering. Hun schrift is nog steeds niet ontcijferd."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which two cities belonged to the Indus Valley Civilization?",
+      "o": [
+       "Harappa and Mohenjo-daro",
+       "Uruk and Ur",
+       "Memphis and Thebes",
+       "Athens and Sparta"
+      ],
+      "x": "Harappa and Mohenjo-daro are its best-known cities."
+     },
+     "nl": {
+      "q": "Welke twee steden behoorden tot de Indusbeschaving?",
+      "o": [
+       "Harappa en Mohenjo-daro",
+       "Uruk en Ur",
+       "Memphis en Thebe",
+       "Athene en Sparta"
+      ],
+      "x": "Harappa en Mohenjo-daro zijn de bekendste steden."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "Scholars can read the script of the Indus Valley Civilization.",
+      "x": "The Indus script has never been deciphered."
+     },
+     "nl": {
+      "q": "Geleerden kunnen het schrift van de Indusbeschaving lezen.",
+      "x": "Het Indusschrift is nooit ontcijferd."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What were the Indus cities especially known for?",
+      "o": [
+       "Planned streets and drainage systems",
+       "Giant pyramids",
+       "Iron weapons",
+       "Stone amphitheatres"
+      ],
+      "x": "Many houses had their own bathroom, connected to covered drains."
+     },
+     "nl": {
+      "q": "Waar stonden de steden van de Indusbeschaving vooral om bekend?",
+      "o": [
+       "Planmatig aangelegde straten en riolering",
+       "Reusachtige piramides",
+       "IJzeren wapens",
+       "Stenen amfitheaters"
+      ],
+      "x": "Veel huizen hadden een eigen badruimte, aangesloten op overdekte riolen."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "chapter": "first",
+   "sort": 18,
+   "yr": -1754,
+   "emoji": "⚖️",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "About 1754 BCE",
+    "ti": "The Code of Hammurabi",
+    "tx": "Hammurabi, king of Babylon, brought much of Mesopotamia under his rule. Around 1754 BCE he had 282 laws carved into a tall stone pillar for all to see. They deal with trade, family, property and crime, often following the principle of 'an eye for an eye'. Punishments differed according to a person's rank. The pillar now stands in the Louvre in Paris."
+   },
+   "nl": {
+    "w": "Ongeveer 1754 v.Chr.",
+    "ti": "De wetten van Hammurabi",
+    "tx": "Hammurabi, koning van Babylon, bracht een groot deel van Mesopotamië onder zijn gezag. Rond 1754 v.Chr. liet hij 282 wetten in een hoge stenen zuil beitelen, zichtbaar voor iedereen. Ze gaan over handel, familie, bezit en misdaad, vaak volgens het principe 'oog om oog'. De straffen verschilden naargelang iemands rang. De zuil staat nu in het Louvre in Parijs."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What is the Code of Hammurabi?",
+      "o": [
+       "A collection of 282 laws from Babylon",
+       "An Egyptian book of the dead",
+       "A Sumerian epic poem",
+       "A Greek peace treaty"
+      ],
+      "x": "It is one of the oldest and best-preserved law codes."
+     },
+     "nl": {
+      "q": "Wat is de Codex Hammurabi?",
+      "o": [
+       "Een verzameling van 282 wetten uit Babylon",
+       "Een Egyptisch dodenboek",
+       "Een Sumerisch heldendicht",
+       "Een Grieks vredesverdrag"
+      ],
+      "x": "Het is een van de oudste en best bewaarde wetboeken."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "Under Hammurabi's laws everyone received the same punishment, whatever their rank.",
+      "x": "Punishments depended on whether you were a noble, a commoner or a slave."
+     },
+     "nl": {
+      "q": "Volgens de wetten van Hammurabi kreeg iedereen dezelfde straf, ongeacht rang.",
+      "x": "De straf hing ervan af of je een edelman, een gewone burger of een slaaf was."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Of which city was Hammurabi king?",
+      "o": [
+       "Babylon",
+       "Uruk",
+       "Thebes",
+       "Athens"
+      ],
+      "x": "Babylon lay on the Euphrates, in present-day Iraq."
+     },
+     "nl": {
+      "q": "Van welke stad was Hammurabi koning?",
+      "o": [
+       "Babylon",
+       "Uruk",
+       "Thebe",
+       "Athene"
+      ],
+      "x": "Babylon lag aan de Eufraat, in het huidige Irak."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "chapter": "first",
+   "sort": 19,
+   "yr": -1600,
+   "emoji": "🐢",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "About 1600–1046 BCE",
+    "ti": "Shang China and the oracle bones",
+    "tx": "Along the Yellow River the Shang dynasty ruled from about 1600 to 1046 BCE. Its craftsmen cast magnificent bronze vessels. Kings put questions to their ancestors by heating ox bones and turtle shells until they cracked. The questions carved on these oracle bones are the oldest known Chinese writing, the direct ancestor of today's characters."
+   },
+   "nl": {
+    "w": "Ongeveer 1600–1046 v.Chr.",
+    "ti": "Shang-China en de orakelbotten",
+    "tx": "Langs de Gele Rivier regeerde de Shang-dynastie van ongeveer 1600 tot 1046 v.Chr. Haar ambachtslieden goten prachtige bronzen vaten. Koningen stelden vragen aan hun voorouders door runderbotten en schildpadschilden te verhitten tot ze barstten. De vragen die in deze orakelbotten zijn gekerfd, zijn het oudste bekende Chinese schrift, de rechtstreekse voorloper van de huidige karakters."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What are oracle bones?",
+      "o": [
+       "Bones and shells used to question the ancestors",
+       "Tools for farming rice",
+       "Musical instruments",
+       "Weapons made of bone"
+      ],
+      "x": "They carry the oldest known Chinese writing."
+     },
+     "nl": {
+      "q": "Wat zijn orakelbotten?",
+      "o": [
+       "Botten en schilden waarmee men de voorouders raadpleegde",
+       "Werktuigen voor de rijstteelt",
+       "Muziekinstrumenten",
+       "Wapens van bot"
+      ],
+      "x": "Ze dragen het oudste bekende Chinese schrift."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Along which river did the Shang dynasty arise?",
+      "o": [
+       "The Yellow River",
+       "The Nile",
+       "The Indus",
+       "The Tigris"
+      ],
+      "x": "The Yellow River (Huang He) is called the cradle of Chinese civilisation."
+     },
+     "nl": {
+      "q": "Langs welke rivier ontstond de Shang-dynastie?",
+      "o": [
+       "De Gele Rivier",
+       "De Nijl",
+       "De Indus",
+       "De Tigris"
+      ],
+      "x": "De Gele Rivier (Huang He) wordt de bakermat van de Chinese beschaving genoemd."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "Cuneiform writing appears in Sumer",
+       "The Great Pyramid of Giza is built",
+       "Hammurabi has his laws carved in stone",
+       "The Shang dynasty falls"
+      ],
+      "x": "About 3200, 2560, 1754 and 1046 BCE."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "Het spijkerschrift ontstaat in Sumerië",
+       "De Grote Piramide van Gizeh wordt gebouwd",
+       "Hammurabi laat zijn wetten in steen beitelen",
+       "De Shang-dynastie valt"
+      ],
+      "x": "Ongeveer 3200, 2560, 1754 en 1046 v.Chr."
+     }
+    }
+   ]
+  },
+  {
+   "id": "k1",
+   "chapter": "classical",
+   "sort": 20,
+   "yr": -508,
+   "emoji": "🗳️",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "508 BCE",
+    "ti": "Athenian democracy",
+    "tx": "In 508 BCE the reformer Cleisthenes introduced a system in Athens where male citizens voted directly on laws. It is seen as the first democracy, though women, slaves and foreigners were excluded."
+   },
+   "nl": {
+    "w": "508 v.Chr.",
+    "ti": "Atheense democratie",
+    "tx": "In 508 v.Chr. voerde hervormer Cleisthenes in Athene een systeem in waarbij mannelijke burgers rechtstreeks over wetten stemden. Het geldt als de eerste democratie, al waren vrouwen, slaven en vreemdelingen uitgesloten."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which city-state is known for the first democracy?",
+      "o": [
+       "Athens",
+       "Sparta",
+       "Corinth",
+       "Thebes"
+      ],
+      "x": "Athens, around 508 BCE."
+     },
+     "nl": {
+      "q": "Welke stadstaat staat bekend voor de eerste democratie?",
+      "o": [
+       "Athene",
+       "Sparta",
+       "Korinthe",
+       "Thebe"
+      ],
+      "x": "Athene, rond 508 v.Chr."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "In the Athenian democracy, women were allowed to vote.",
+      "x": "Only free adult male citizens could vote; women, slaves and foreigners could not."
+     },
+     "nl": {
+      "q": "In de Atheense democratie mochten vrouwen stemmen.",
+      "x": "Alleen vrije volwassen mannelijke burgers mochten stemmen; vrouwen, slaven en vreemdelingen niet."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which reformer introduced democracy in Athens?",
+      "o": [
+       "Cleisthenes",
+       "Pericles",
+       "Alexander",
+       "Socrates"
+      ],
+      "x": "Cleisthenes, in 508 BCE. Pericles led Athens about half a century later."
+     },
+     "nl": {
+      "q": "Welke hervormer voerde de democratie in Athene in?",
+      "o": [
+       "Cleisthenes",
+       "Pericles",
+       "Alexander",
+       "Socrates"
+      ],
+      "x": "Cleisthenes, in 508 v.Chr. Pericles leidde Athene ongeveer een halve eeuw later."
+     }
+    }
+   ]
+  },
+  {
+   "id": "k4",
+   "chapter": "classical",
+   "sort": 21,
+   "yr": -334,
+   "emoji": "🐎",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "336–323 BCE",
+    "ti": "Alexander the Great",
+    "tx": "Alexander became king of Macedon in 336 BCE, at the age of twenty. He had been taught by the philosopher Aristotle. Within about ten years he conquered the Persian Empire and led his army from Greece through Egypt as far as the Indus. He died in Babylon in 323 BCE, aged 32, and his generals divided the empire. Greek language and culture spread across the whole region: the Hellenistic age."
+   },
+   "nl": {
+    "w": "336–323 v.Chr.",
+    "ti": "Alexander de Grote",
+    "tx": "Alexander werd in 336 v.Chr. koning van Macedonië, op twintigjarige leeftijd. Hij had les gekregen van de filosoof Aristoteles. In ongeveer tien jaar veroverde hij het Perzische Rijk en leidde hij zijn leger van Griekenland via Egypte tot aan de Indus. Hij stierf in 323 v.Chr. in Babylon, 32 jaar oud, en zijn generaals verdeelden het rijk. De Griekse taal en cultuur verspreidden zich over het hele gebied: het hellenisme."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which empire did Alexander the Great conquer?",
+      "o": [
+       "The Persian Empire",
+       "The Roman Empire",
+       "The Han Empire",
+       "The Mongol Empire"
+      ],
+      "x": "The Persian Empire of Darius III, then the largest in the world."
+     },
+     "nl": {
+      "q": "Welk rijk veroverde Alexander de Grote?",
+      "o": [
+       "Het Perzische Rijk",
+       "Het Romeinse Rijk",
+       "Het Han-rijk",
+       "Het Mongoolse Rijk"
+      ],
+      "x": "Het Perzische Rijk van Darius III, toen het grootste ter wereld."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who was Alexander's teacher?",
+      "o": [
+       "Aristotle",
+       "Plato",
+       "Socrates",
+       "Homer"
+      ],
+      "x": "Aristotle taught the young prince for several years."
+     },
+     "nl": {
+      "q": "Wie was de leraar van Alexander?",
+      "o": [
+       "Aristoteles",
+       "Plato",
+       "Socrates",
+       "Homerus"
+      ],
+      "x": "Aristoteles gaf de jonge prins enkele jaren les."
+     }
+    },
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did Alexander die?",
+      "o": [
+       "323 BCE",
+       "508 BCE",
+       "44 BCE",
+       "27 BCE"
+      ],
+      "x": "In 323 BCE in Babylon, at the age of 32."
+     },
+     "nl": {
+      "q": "In welk jaar stierf Alexander?",
+      "o": [
+       "323 v.Chr.",
+       "508 v.Chr.",
+       "44 v.Chr.",
+       "27 v.Chr."
+      ],
+      "x": "In 323 v.Chr. in Babylon, op 32-jarige leeftijd."
+     }
+    }
+   ]
+  },
+  {
+   "id": "k5",
+   "chapter": "classical",
+   "sort": 22,
+   "yr": -268,
+   "emoji": "☸️",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "About 268–232 BCE",
+    "ti": "Ashoka and the Maurya Empire",
+    "tx": "The Maurya Empire united most of the Indian subcontinent. Its third emperor, Ashoka, came to power around 268 BCE. After his bloody conquest of Kalinga he was filled with remorse and embraced Buddhism. He had edicts about non-violence, tolerance and care for people and animals carved on rocks and pillars throughout the empire, and sent Buddhist missions abroad."
+   },
+   "nl": {
+    "w": "Ongeveer 268–232 v.Chr.",
+    "ti": "Ashoka en het Mauryarijk",
+    "tx": "Het Mauryarijk verenigde het grootste deel van het Indische subcontinent. De derde keizer, Ashoka, kwam rond 268 v.Chr. aan de macht. Na zijn bloedige verovering van Kalinga kreeg hij diepe spijt en omarmde hij het boeddhisme. Hij liet edicten over geweldloosheid, verdraagzaamheid en zorg voor mens en dier in rotsen en zuilen kerven, overal in het rijk, en stuurde boeddhistische gezanten naar het buitenland."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which religion did Ashoka embrace after the war against Kalinga?",
+      "o": [
+       "Buddhism",
+       "Christianity",
+       "Islam",
+       "Zoroastrianism"
+      ],
+      "x": "Christianity and Islam did not exist yet."
+     },
+     "nl": {
+      "q": "Welke godsdienst omarmde Ashoka na de oorlog tegen Kalinga?",
+      "o": [
+       "Het boeddhisme",
+       "Het christendom",
+       "De islam",
+       "Het zoroastrisme"
+      ],
+      "x": "Het christendom en de islam bestonden toen nog niet."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "How did Ashoka make his ideas known?",
+      "o": [
+       "With edicts carved on rocks and pillars",
+       "With printed books",
+       "With clay tablets in cuneiform",
+       "With newspapers"
+      ],
+      "x": "Dozens of these inscriptions survive across South Asia."
+     },
+     "nl": {
+      "q": "Hoe maakte Ashoka zijn ideeën bekend?",
+      "o": [
+       "Met edicten, gekerfd in rotsen en zuilen",
+       "Met gedrukte boeken",
+       "Met kleitabletten in spijkerschrift",
+       "Met kranten"
+      ],
+      "x": "Tientallen van deze inscripties zijn in Zuid-Azië bewaard gebleven."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "Ashoka ruled an empire on the Indian subcontinent.",
+      "x": "The Maurya Empire covered most of present-day India, Pakistan and Bangladesh."
+     },
+     "nl": {
+      "q": "Ashoka regeerde over een rijk op het Indische subcontinent.",
+      "x": "Het Mauryarijk omvatte het grootste deel van het huidige India, Pakistan en Bangladesh."
+     }
+    }
+   ]
+  },
+  {
+   "id": "k3",
+   "chapter": "classical",
+   "sort": 23,
+   "yr": -206,
+   "emoji": "🧵",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "206 BCE – 220 CE",
+    "ti": "Han China and the Silk Road",
+    "tx": "The Han dynasty ruled a large, centralised China and opened trade routes westward. Along the Silk Road, silk, spices, ideas and diseases travelled between China and the Mediterranean. Han China also gave the world paper."
+   },
+   "nl": {
+    "w": "206 v.Chr. – 220 n.Chr.",
+    "ti": "Han-China en de Zijderoute",
+    "tx": "De Han-dynastie regeerde een groot, gecentraliseerd China en opende handelsroutes naar het westen. Langs de Zijderoute reisden zijde, specerijen, ideeën en ziektes tussen China en het Middellandse Zeegebied. Han-China schonk de wereld ook het papier."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What was the trade network linking China with the Mediterranean called?",
+      "o": [
+       "The Silk Road",
+       "The Amber Road",
+       "The Spice Strait",
+       "The Royal Road"
+      ],
+      "x": "The Silk Road, a network of overland and sea routes."
+     },
+     "nl": {
+      "q": "Hoe heette het handelsnetwerk tussen China en het Middellandse Zeegebied?",
+      "o": [
+       "De Zijderoute",
+       "De Barnsteenroute",
+       "De Specerijenzee",
+       "De Koningsweg"
+      ],
+      "x": "De Zijderoute, een netwerk van land- en zeeroutes."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "Only goods travelled along the Silk Road, not ideas.",
+      "x": "Religions such as Buddhism, inventions and diseases travelled along it too."
+     },
+     "nl": {
+      "q": "Langs de Zijderoute reisden alleen goederen, geen ideeën.",
+      "x": "Ook godsdiensten zoals het boeddhisme, uitvindingen en ziektes reisden mee."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which invention comes from Han China?",
+      "o": [
+       "Paper",
+       "The steam engine",
+       "The telescope",
+       "The alphabet"
+      ],
+      "x": "According to tradition, the official Cai Lun perfected papermaking around 105 CE."
+     },
+     "nl": {
+      "q": "Welke uitvinding komt uit Han-China?",
+      "o": [
+       "Papier",
+       "De stoommachine",
+       "De telescoop",
+       "Het alfabet"
+      ],
+      "x": "Volgens de overlevering verbeterde de ambtenaar Cai Lun rond 105 n.Chr. het maken van papier."
+     }
+    }
+   ]
+  },
+  {
+   "id": "k2",
+   "chapter": "classical",
+   "sort": 24,
+   "yr": -27,
+   "emoji": "🦅",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "27 BCE – 476 CE",
+    "ti": "The Roman Empire",
+    "tx": "Rome grew from a city into a republic and then an empire; Augustus became the first emperor in 27 BCE. The Western Roman Empire ended in 476 CE; the Eastern half (Byzantium) lasted until 1453."
+   },
+   "nl": {
+    "w": "27 v.Chr. – 476 n.Chr.",
+    "ti": "Het Romeinse Rijk",
+    "tx": "Rome groeide van stad tot republiek en daarna keizerrijk; Augustus werd in 27 v.Chr. de eerste keizer. Het West-Romeinse Rijk eindigde in 476 n.Chr.; de oostelijke helft (Byzantium) bestond tot 1453."
+   },
+   "questions": [
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year is the fall of the Western Roman Empire traditionally dated?",
+      "o": [
+       "476 CE",
+       "27 BCE",
+       "1066 CE",
+       "800 CE"
+      ],
+      "x": "476 CE, when Odoacer deposed Romulus Augustulus."
+     },
+     "nl": {
+      "q": "In welk jaar situeert men traditioneel de val van het West-Romeinse Rijk?",
+      "o": [
+       "476 n.Chr.",
+       "27 v.Chr.",
+       "1066 n.Chr.",
+       "800 n.Chr."
+      ],
+      "x": "476 n.Chr., toen Odoaker Romulus Augustulus afzette."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who was the first Roman emperor?",
+      "o": [
+       "Augustus",
+       "Julius Caesar",
+       "Nero",
+       "Constantine"
+      ],
+      "x": "Augustus, from 27 BCE. Julius Caesar was dictator, never emperor."
+     },
+     "nl": {
+      "q": "Wie was de eerste Romeinse keizer?",
+      "o": [
+       "Augustus",
+       "Julius Caesar",
+       "Nero",
+       "Constantijn"
+      ],
+      "x": "Augustus, vanaf 27 v.Chr. Julius Caesar was dictator, maar nooit keizer."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "Democracy begins in Athens",
+       "Alexander conquers the Persian Empire",
+       "Augustus becomes emperor",
+       "The Western Roman Empire falls"
+      ],
+      "x": "508 BCE, about 330 BCE, 27 BCE and 476 CE."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "De democratie begint in Athene",
+       "Alexander verovert het Perzische Rijk",
+       "Augustus wordt keizer",
+       "Het West-Romeinse Rijk valt"
+      ],
+      "x": "508 v.Chr., ongeveer 330 v.Chr., 27 v.Chr. en 476 n.Chr."
+     }
+    }
+   ]
+  },
+  {
+   "id": "m1",
+   "chapter": "medieval",
+   "sort": 25,
+   "yr": 762,
+   "emoji": "📚",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "8th–13th century",
+    "ti": "The Islamic Golden Age",
+    "tx": "In Baghdad's House of Wisdom, scholars translated and extended Greek, Persian and Indian knowledge. Al-Khwarizmi's book on al-jabr gave us the word 'algebra', and his name gave us 'algorithm'."
+   },
+   "nl": {
+    "w": "8e–13e eeuw",
+    "ti": "De Islamitische Gouden Eeuw",
+    "tx": "In het Huis van Wijsheid in Bagdad vertaalden en vernieuwden geleerden Griekse, Perzische en Indische kennis. Al-Chwarizmi's boek over al-jabr gaf ons het woord 'algebra', en zijn naam het woord 'algoritme'."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which word comes from al-Khwarizmi's term 'al-jabr'?",
+      "o": [
+       "Algebra",
+       "Algorithm",
+       "Alcohol",
+       "Almanac"
+      ],
+      "x": "'Al-jabr' became 'algebra'. 'Algorithm' comes from his name."
+     },
+     "nl": {
+      "q": "Welk woord komt van al-Chwarizmi's term 'al-jabr'?",
+      "o": [
+       "Algebra",
+       "Algoritme",
+       "Alcohol",
+       "Almanak"
+      ],
+      "x": "'Al-jabr' werd 'algebra'. 'Algoritme' komt van zijn naam."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "In which city was the House of Wisdom?",
+      "o": [
+       "Baghdad",
+       "Córdoba",
+       "Cairo",
+       "Constantinople"
+      ],
+      "x": "Baghdad was the capital of the Abbasid caliphs."
+     },
+     "nl": {
+      "q": "In welke stad stond het Huis van Wijsheid?",
+      "o": [
+       "Bagdad",
+       "Córdoba",
+       "Caïro",
+       "Constantinopel"
+      ],
+      "x": "Bagdad was de hoofdstad van de Abbasidische kaliefen."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "The word 'algorithm' comes from the name of the scholar al-Khwarizmi.",
+      "x": "His name was written in Latin as 'Algoritmi'."
+     },
+     "nl": {
+      "q": "Het woord 'algoritme' komt van de naam van de geleerde al-Chwarizmi.",
+      "x": "Zijn naam werd in het Latijn geschreven als 'Algoritmi'."
+     }
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "chapter": "medieval",
+   "sort": 26,
+   "yr": 800,
+   "emoji": "👑",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "800 CE",
+    "ti": "Charlemagne and feudal Europe",
+    "tx": "On Christmas Day 800, Pope Leo III crowned Charlemagne emperor, reviving the idea of a Western empire. After his empire split, Europe was organised in feudalism: lords, vassals and peasants. Lords granted land to vassals in return for loyalty and military service, while peasants worked the land."
+   },
+   "nl": {
+    "w": "800 n.Chr.",
+    "ti": "Karel de Grote en het feodale Europa",
+    "tx": "Op Kerstdag 800 kroonde paus Leo III Karel de Grote tot keizer, waarmee het idee van een westers keizerrijk herleefde. Na de opdeling van zijn rijk werd Europa georganiseerd als feodaal stelsel: heren, vazallen en boeren. Heren gaven land aan vazallen in ruil voor trouw en militaire dienst, terwijl boeren het land bewerkten."
+   },
+   "questions": [
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year was Charlemagne crowned emperor?",
+      "o": [
+       "800",
+       "476",
+       "1066",
+       "1492"
+      ],
+      "x": "Christmas Day, 800."
+     },
+     "nl": {
+      "q": "In welk jaar werd Karel de Grote tot keizer gekroond?",
+      "o": [
+       "800",
+       "476",
+       "1066",
+       "1492"
+      ],
+      "x": "Kerstdag 800."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who crowned Charlemagne emperor?",
+      "o": [
+       "Pope Leo III",
+       "The Byzantine emperor",
+       "He crowned himself",
+       "The king of England"
+      ],
+      "x": "Pope Leo III, in St Peter's in Rome."
+     },
+     "nl": {
+      "q": "Wie kroonde Karel de Grote tot keizer?",
+      "o": [
+       "Paus Leo III",
+       "De Byzantijnse keizer",
+       "Hij kroonde zichzelf",
+       "De koning van Engeland"
+      ],
+      "x": "Paus Leo III, in de Sint-Pietersbasiliek in Rome."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What is feudalism?",
+      "o": [
+       "A system in which lords gave land to vassals in return for loyalty and service",
+       "Rule by elected citizens",
+       "A league of merchant cities",
+       "A religious order"
+      ],
+      "x": "At the bottom, peasants worked the land of their lord."
+     },
+     "nl": {
+      "q": "Wat is feodalisme?",
+      "o": [
+       "Een stelsel waarin heren land gaven aan vazallen in ruil voor trouw en dienst",
+       "Bestuur door verkozen burgers",
+       "Een verbond van handelssteden",
+       "Een kloosterorde"
+      ],
+      "x": "Onderaan bewerkten boeren het land van hun heer."
+     }
+    }
+   ]
+  },
+  {
+   "id": "m4",
+   "chapter": "medieval",
+   "sort": 27,
+   "yr": 1206,
+   "emoji": "🏹",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "1206–1368",
+    "ti": "The Mongol Empire",
+    "tx": "In 1206 Temüjin united the nomadic tribes of the Mongolian steppe and took the title Genghis Khan. His horse archers and his successors built the largest connected land empire in history, reaching from the Pacific Ocean to eastern Europe. The conquests cost millions of lives, but for a time merchants and travellers such as Marco Polo could move safely along the Silk Road."
+   },
+   "nl": {
+    "w": "1206–1368",
+    "ti": "Het Mongoolse Rijk",
+    "tx": "In 1206 verenigde Temüjin de nomadenstammen van de Mongoolse steppe en nam hij de titel Dzjengis Khan aan. Zijn bereden boogschutters en zijn opvolgers bouwden het grootste aaneengesloten landrijk uit de geschiedenis, van de Stille Oceaan tot Oost-Europa. De veroveringen kostten miljoenen levens, maar een tijdlang konden handelaars en reizigers zoals Marco Polo veilig langs de Zijderoute trekken."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who founded the Mongol Empire?",
+      "o": [
+       "Genghis Khan",
+       "Kublai Khan",
+       "Attila",
+       "Tamerlane"
+      ],
+      "x": "Kublai Khan was his grandson and later ruled China."
+     },
+     "nl": {
+      "q": "Wie stichtte het Mongoolse Rijk?",
+      "o": [
+       "Dzjengis Khan",
+       "Koeblai Khan",
+       "Attila",
+       "Timoer Lenk"
+      ],
+      "x": "Koeblai Khan was zijn kleinzoon en regeerde later over China."
+     }
+    },
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did Temüjin become Genghis Khan?",
+      "o": [
+       "1206",
+       "1066",
+       "1347",
+       "1453"
+      ],
+      "x": "In 1206, at a great assembly of the Mongol tribes."
+     },
+     "nl": {
+      "q": "In welk jaar werd Temüjin Dzjengis Khan?",
+      "o": [
+       "1206",
+       "1066",
+       "1347",
+       "1453"
+      ],
+      "x": "In 1206, op een grote vergadering van de Mongoolse stammen."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "The Mongol Empire was the largest connected land empire in history.",
+      "x": "At its height it covered roughly 24 million square kilometres."
+     },
+     "nl": {
+      "q": "Het Mongoolse Rijk was het grootste aaneengesloten landrijk uit de geschiedenis.",
+      "x": "Op zijn hoogtepunt besloeg het ongeveer 24 miljoen vierkante kilometer."
+     }
+    }
+   ]
+  },
+  {
+   "id": "m5",
+   "chapter": "medieval",
+   "sort": 28,
+   "yr": 1324,
+   "emoji": "🪙",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "Around 1324",
+    "ti": "Mansa Musa and the Mali Empire",
+    "tx": "The Mali Empire in West Africa grew rich from gold and salt carried across the Sahara. In 1324 its ruler Mansa Musa made a pilgrimage to Mecca and gave away so much gold in Cairo that its value there dropped for years. Under his rule Timbuktu became a famous centre of trade and Islamic learning. He is often called one of the richest people in history."
+   },
+   "nl": {
+    "w": "Rond 1324",
+    "ti": "Mansa Moussa en het Malirijk",
+    "tx": "Het Malirijk in West-Afrika werd rijk door goud en zout die door de Sahara werden vervoerd. In 1324 trok heerser Mansa Moussa op bedevaart naar Mekka en gaf hij in Caïro zoveel goud weg dat de waarde ervan daar jarenlang daalde. Onder zijn bewind werd Timboektoe een beroemd centrum van handel en islamitische geleerdheid. Hij wordt vaak een van de rijkste mensen uit de geschiedenis genoemd."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "What made the Mali Empire rich?",
+      "o": [
+       "Trade in gold and salt",
+       "Silk production",
+       "Spice plantations",
+       "Whaling"
+      ],
+      "x": "Caravans carried gold north and salt south across the Sahara."
+     },
+     "nl": {
+      "q": "Wat maakte het Malirijk rijk?",
+      "o": [
+       "De handel in goud en zout",
+       "Zijdeproductie",
+       "Specerijenplantages",
+       "Walvisvangst"
+      ],
+      "x": "Karavanen brachten goud naar het noorden en zout naar het zuiden door de Sahara."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which city became a centre of learning under Mansa Musa?",
+      "o": [
+       "Timbuktu",
+       "Baghdad",
+       "Venice",
+       "Samarkand"
+      ],
+      "x": "Timbuktu's mosques and libraries drew scholars from far away."
+     },
+     "nl": {
+      "q": "Welke stad werd onder Mansa Moussa een centrum van geleerdheid?",
+      "o": [
+       "Timboektoe",
+       "Bagdad",
+       "Venetië",
+       "Samarkand"
+      ],
+      "x": "De moskeeën en bibliotheken van Timboektoe trokken geleerden van ver aan."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "Mansa Musa's journey to Mecca took place in the 14th century.",
+      "x": "In 1324, so in the 14th century."
+     },
+     "nl": {
+      "q": "De reis van Mansa Moussa naar Mekka vond plaats in de 14e eeuw.",
+      "x": "In 1324, dus in de 14e eeuw."
+     }
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "chapter": "medieval",
+   "sort": 29,
+   "yr": 1347,
+   "emoji": "🐀",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "1347–1351",
+    "ti": "The Black Death",
+    "tx": "The plague spread from Asia along trade routes and reached Europe in 1347. It killed an estimated third or more of Europe's population. The disease is caused by a bacterium, spread by fleas on rats."
+   },
+   "nl": {
+    "w": "1347–1351",
+    "ti": "De Zwarte Dood",
+    "tx": "De pest verspreidde zich vanuit Azië langs handelsroutes en bereikte Europa in 1347. Naar schatting stierf een derde of meer van de Europese bevolking. De ziekte wordt veroorzaakt door een bacterie, verspreid door vlooien op ratten."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Roughly what share of Europe's population died in the Black Death?",
+      "o": [
+       "A third or more",
+       "About 1%",
+       "About 5%",
+       "Nearly everyone"
+      ],
+      "x": "Estimates range from about a third to a half."
+     },
+     "nl": {
+      "q": "Welk aandeel van de Europese bevolking stierf ongeveer aan de Zwarte Dood?",
+      "o": [
+       "Een derde of meer",
+       "Ongeveer 1%",
+       "Ongeveer 5%",
+       "Bijna iedereen"
+      ],
+      "x": "Schattingen lopen van ongeveer een derde tot de helft."
+     }
+    },
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did the Black Death reach Europe?",
+      "o": [
+       "1347",
+       "1066",
+       "1492",
+       "1215"
+      ],
+      "x": "In 1347, by ship, at ports on the Mediterranean."
+     },
+     "nl": {
+      "q": "In welk jaar bereikte de Zwarte Dood Europa?",
+      "o": [
+       "1347",
+       "1066",
+       "1492",
+       "1215"
+      ],
+      "x": "In 1347, per schip, via havens aan de Middellandse Zee."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "Charlemagne is crowned emperor",
+       "Genghis Khan unites the Mongols",
+       "Mansa Musa travels to Mecca",
+       "The Black Death reaches Europe"
+      ],
+      "x": "800, 1206, 1324 and 1347."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "Karel de Grote wordt tot keizer gekroond",
+       "Dzjengis Khan verenigt de Mongolen",
+       "Mansa Moussa reist naar Mekka",
+       "De Zwarte Dood bereikt Europa"
+      ],
+      "x": "800, 1206, 1324 en 1347."
+     }
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "chapter": "early",
+   "sort": 30,
+   "yr": 1450,
+   "emoji": "📖",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "Around 1450",
+    "ti": "The printing press",
+    "tx": "Around 1450 Johannes Gutenberg in Mainz developed printing with movable metal type in Europe. Books became cheaper and ideas spread faster, fuelling the Renaissance, the Reformation and science."
+   },
+   "nl": {
+    "w": "Rond 1450",
+    "ti": "De drukpers",
+    "tx": "Rond 1450 ontwikkelde Johannes Gutenberg in Mainz de drukpers met losse metalen letters in Europa. Boeken werden goedkoper en ideeën verspreidden sneller, wat renaissance, reformatie en wetenschap voedde."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who developed the European printing press with movable type?",
+      "o": [
+       "Johannes Gutenberg",
+       "Leonardo da Vinci",
+       "Martin Luther",
+       "Isaac Newton"
+      ],
+      "x": "Gutenberg, in Mainz, around 1450."
+     },
+     "nl": {
+      "q": "Wie ontwikkelde de Europese drukpers met losse letters?",
+      "o": [
+       "Johannes Gutenberg",
+       "Leonardo da Vinci",
+       "Maarten Luther",
+       "Isaac Newton"
+      ],
+      "x": "Gutenberg, in Mainz, rond 1450."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What was the main effect of the printing press?",
+      "o": [
+       "Books became cheaper and ideas spread faster",
+       "Books became rarer and more expensive",
+       "Handwriting was forbidden",
+       "Latin disappeared at once"
+      ],
+      "x": "Within fifty years millions of books had been printed in Europe."
+     },
+     "nl": {
+      "q": "Wat was het belangrijkste gevolg van de drukpers?",
+      "o": [
+       "Boeken werden goedkoper en ideeën verspreidden zich sneller",
+       "Boeken werden zeldzamer en duurder",
+       "Met de hand schrijven werd verboden",
+       "Het Latijn verdween meteen"
+      ],
+      "x": "Binnen vijftig jaar waren in Europa miljoenen boeken gedrukt."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "Gutenberg worked in the German city of Mainz.",
+      "x": "His best-known work is the Gutenberg Bible, printed around 1455."
+     },
+     "nl": {
+      "q": "Gutenberg werkte in de Duitse stad Mainz.",
+      "x": "Zijn bekendste werk is de Gutenbergbijbel, gedrukt rond 1455."
+     }
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "chapter": "early",
+   "sort": 31,
+   "yr": 1492,
+   "emoji": "⛵",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "1492–1522",
+    "ti": "The Age of Exploration",
+    "tx": "Columbus reached the Americas in 1492, Vasco da Gama sailed to India in 1498, and Magellan's expedition completed the first circumnavigation of the globe (1519–1522). Contact between continents reshaped the world, with devastating effects on Indigenous peoples."
+   },
+   "nl": {
+    "w": "1492–1522",
+    "ti": "Het tijdperk van de ontdekkingen",
+    "tx": "Columbus bereikte Amerika in 1492, Vasco da Gama zeilde in 1498 naar India en de expeditie van Magellaan voltooide de eerste omzeiling van de wereld (1519–1522). Het contact tussen continenten veranderde de wereld, met verwoestende gevolgen voor de inheemse bevolking."
+   },
+   "questions": [
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did Columbus first reach the Americas?",
+      "o": [
+       "1492",
+       "1453",
+       "1519",
+       "1607"
+      ],
+      "x": "1492. People had already lived in the Americas for more than 15,000 years."
+     },
+     "nl": {
+      "q": "In welk jaar bereikte Columbus voor het eerst Amerika?",
+      "o": [
+       "1492",
+       "1453",
+       "1519",
+       "1607"
+      ],
+      "x": "1492. Mensen woonden er toen al meer dan 15.000 jaar."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Whose expedition completed the first voyage around the world?",
+      "o": [
+       "Ferdinand Magellan's",
+       "Christopher Columbus's",
+       "Vasco da Gama's",
+       "James Cook's"
+      ],
+      "x": "Magellan himself was killed in the Philippines; Elcano brought the last ship home in 1522."
+     },
+     "nl": {
+      "q": "Wiens expeditie voltooide de eerste reis rond de wereld?",
+      "o": [
+       "Die van Ferdinand Magellaan",
+       "Die van Christoffel Columbus",
+       "Die van Vasco da Gama",
+       "Die van James Cook"
+      ],
+      "x": "Magellaan zelf sneuvelde in de Filipijnen; Elcano bracht het laatste schip in 1522 thuis."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Where did Vasco da Gama sail to in 1498?",
+      "o": [
+       "India",
+       "America",
+       "Australia",
+       "Japan"
+      ],
+      "x": "He sailed around Africa and so opened the sea route from Europe to India."
+     },
+     "nl": {
+      "q": "Waar zeilde Vasco da Gama in 1498 naartoe?",
+      "o": [
+       "India",
+       "Amerika",
+       "Australië",
+       "Japan"
+      ],
+      "x": "Hij zeilde om Afrika heen en opende zo de zeeroute van Europa naar India."
+     }
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "chapter": "early",
+   "sort": 32,
+   "yr": 1517,
+   "emoji": "📜",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "1517",
+    "ti": "The Reformation",
+    "tx": "In 1517 the German monk Martin Luther published 95 theses against the sale of indulgences, by which the Church promised forgiveness of sins in return for money. Thanks to the printing press his ideas spread fast. Western Christianity split into Catholics and Protestants, and more than a century of religious conflict followed in Europe. Luther also translated the Bible into German, so that ordinary people could read it."
+   },
+   "nl": {
+    "w": "1517",
+    "ti": "De Reformatie",
+    "tx": "In 1517 publiceerde de Duitse monnik Maarten Luther 95 stellingen tegen de verkoop van aflaten, waarmee de Kerk vergeving van zonden beloofde in ruil voor geld. Dankzij de drukpers verspreidden zijn ideeën zich snel. Het westerse christendom splitste zich in katholieken en protestanten, en er volgde meer dan een eeuw van godsdienstconflicten in Europa. Luther vertaalde ook de Bijbel naar het Duits, zodat gewone mensen hem konden lezen."
+   },
+   "questions": [
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did Luther publish his 95 theses?",
+      "o": [
+       "1517",
+       "1492",
+       "1450",
+       "1648"
+      ],
+      "x": "In 1517, in Wittenberg."
+     },
+     "nl": {
+      "q": "In welk jaar publiceerde Luther zijn 95 stellingen?",
+      "o": [
+       "1517",
+       "1492",
+       "1450",
+       "1648"
+      ],
+      "x": "In 1517, in Wittenberg."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What did Luther criticise in his 95 theses?",
+      "o": [
+       "The sale of indulgences",
+       "The printing of books",
+       "The voyages of discovery",
+       "The use of German in church"
+      ],
+      "x": "He rejected the idea that forgiveness could be bought."
+     },
+     "nl": {
+      "q": "Wat bekritiseerde Luther in zijn 95 stellingen?",
+      "o": [
+       "De verkoop van aflaten",
+       "Het drukken van boeken",
+       "De ontdekkingsreizen",
+       "Het gebruik van het Duits in de kerk"
+      ],
+      "x": "Hij verwierp het idee dat vergeving te koop was."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "The printing press helped Luther's ideas to spread quickly.",
+      "x": "His writings were printed and reprinted in huge numbers within a few years."
+     },
+     "nl": {
+      "q": "De drukpers hielp de ideeën van Luther snel te verspreiden.",
+      "x": "Zijn geschriften werden in enkele jaren in enorme aantallen gedrukt en herdrukt."
+     }
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "chapter": "early",
+   "sort": 33,
+   "yr": 1543,
+   "emoji": "🔭",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "1543–1687",
+    "ti": "The Scientific Revolution",
+    "tx": "In 1543 Copernicus proposed that the Earth orbits the Sun. Galileo, Kepler and finally Newton (Principia, 1687) showed that nature follows mathematical laws."
+   },
+   "nl": {
+    "w": "1543–1687",
+    "ti": "De wetenschappelijke revolutie",
+    "tx": "In 1543 stelde Copernicus dat de aarde rond de zon draait. Galilei, Kepler en uiteindelijk Newton (Principia, 1687) toonden aan dat de natuur wiskundige wetten volgt."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who published the Sun-centred model of the universe in 1543?",
+      "o": [
+       "Copernicus",
+       "Ptolemy",
+       "Aristotle",
+       "Darwin"
+      ],
+      "x": "Nicolaus Copernicus, in De revolutionibus."
+     },
+     "nl": {
+      "q": "Wie publiceerde in 1543 het zonnecentrische model?",
+      "o": [
+       "Copernicus",
+       "Ptolemaeus",
+       "Aristoteles",
+       "Darwin"
+      ],
+      "x": "Nicolaus Copernicus, in De revolutionibus."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who wrote the Principia (1687), with the laws of motion and gravity?",
+      "o": [
+       "Isaac Newton",
+       "Galileo Galilei",
+       "Johannes Kepler",
+       "René Descartes"
+      ],
+      "x": "Newton showed that the same laws hold on Earth and in the heavens."
+     },
+     "nl": {
+      "q": "Wie schreef de Principia (1687), met de wetten van beweging en zwaartekracht?",
+      "o": [
+       "Isaac Newton",
+       "Galileo Galilei",
+       "Johannes Kepler",
+       "René Descartes"
+      ],
+      "x": "Newton toonde aan dat dezelfde wetten gelden op aarde en in de hemel."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "Gutenberg's printing press",
+       "Columbus reaches the Americas",
+       "Luther's 95 theses",
+       "Newton's Principia"
+      ],
+      "x": "About 1450, 1492, 1517 and 1687."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "De drukpers van Gutenberg",
+       "Columbus bereikt Amerika",
+       "De 95 stellingen van Luther",
+       "De Principia van Newton"
+      ],
+      "x": "Ongeveer 1450, 1492, 1517 en 1687."
+     }
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "chapter": "early",
+   "sort": 34,
+   "yr": 1776,
+   "emoji": "🗽",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "1776–1789",
+    "ti": "Enlightenment and revolutions",
+    "tx": "Enlightenment thinkers argued for reason, rights and liberty. The American Revolution (1776) and the French Revolution (1789) turned these ideas into new republics."
+   },
+   "nl": {
+    "w": "1776–1789",
+    "ti": "Verlichting en revoluties",
+    "tx": "Verlichtingsdenkers pleitten voor rede, rechten en vrijheid. De Amerikaanse (1776) en de Franse Revolutie (1789) zetten die ideeën om in nieuwe republieken."
+   },
+   "questions": [
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did the French Revolution begin?",
+      "o": [
+       "1789",
+       "1776",
+       "1815",
+       "1848"
+      ],
+      "x": "1789, with the storming of the Bastille."
+     },
+     "nl": {
+      "q": "In welk jaar begon de Franse Revolutie?",
+      "o": [
+       "1789",
+       "1776",
+       "1815",
+       "1848"
+      ],
+      "x": "1789, met de bestorming van de Bastille."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": true,
+     "en": {
+      "q": "The American Revolution came before the French Revolution.",
+      "x": "The American Declaration of Independence dates from 1776; the French Revolution began in 1789."
+     },
+     "nl": {
+      "q": "De Amerikaanse Revolutie kwam vóór de Franse Revolutie.",
+      "x": "De Amerikaanse Onafhankelijkheidsverklaring dateert van 1776; de Franse Revolutie begon in 1789."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "What did Enlightenment thinkers argue for?",
+      "o": [
+       "Reason, rights and liberty",
+       "The divine right of kings",
+       "A return to feudalism",
+       "A ban on science"
+      ],
+      "x": "Thinkers such as Locke, Voltaire and Montesquieu inspired the revolutions."
+     },
+     "nl": {
+      "q": "Waarvoor pleitten de denkers van de Verlichting?",
+      "o": [
+       "Rede, rechten en vrijheid",
+       "Het goddelijk recht van koningen",
+       "Een terugkeer naar het feodalisme",
+       "Een verbod op wetenschap"
+      ],
+      "x": "Denkers als Locke, Voltaire en Montesquieu inspireerden de revoluties."
+     }
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "chapter": "modern",
+   "sort": 35,
+   "yr": 1760,
+   "emoji": "⚙️",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "About 1760–1840",
+    "ti": "The Industrial Revolution",
+    "tx": "Starting in Britain, steam engines and factories transformed production, transport and cities. Population and wealth grew rapidly, and so did pollution. Belgium was the first country on the continent to follow."
+   },
+   "nl": {
+    "w": "Ongeveer 1760–1840",
+    "ti": "De industriële revolutie",
+    "tx": "Vanuit Groot-Brittannië veranderden stoommachines en fabrieken productie, transport en steden. Bevolking en welvaart groeiden snel, en de vervuiling ook. België was het eerste land op het continent dat volgde."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "In which country did the Industrial Revolution begin?",
+      "o": [
+       "Britain",
+       "France",
+       "Germany",
+       "The United States"
+      ],
+      "x": "Britain, with coal, steam power and textile mills."
+     },
+     "nl": {
+      "q": "In welk land begon de industriële revolutie?",
+      "o": [
+       "Groot-Brittannië",
+       "Frankrijk",
+       "Duitsland",
+       "De Verenigde Staten"
+      ],
+      "x": "Groot-Brittannië, met steenkool, stoomkracht en textielfabrieken."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which country on the European continent was the first to industrialise?",
+      "o": [
+       "Belgium",
+       "Spain",
+       "Russia",
+       "Italy"
+      ],
+      "x": "Coal, iron and textile industry grew early around Liège, Charleroi, Ghent and Verviers."
+     },
+     "nl": {
+      "q": "Welk land op het Europese vasteland industrialiseerde als eerste?",
+      "o": [
+       "België",
+       "Spanje",
+       "Rusland",
+       "Italië"
+      ],
+      "x": "Steenkool-, ijzer- en textielnijverheid groeiden vroeg rond Luik, Charleroi, Gent en Verviers."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which machine drove the Industrial Revolution?",
+      "o": [
+       "The steam engine",
+       "The printing press",
+       "The computer",
+       "The windmill"
+      ],
+      "x": "James Watt's improved steam engine (1769) powered factories, trains and ships."
+     },
+     "nl": {
+      "q": "Welke machine dreef de industriële revolutie aan?",
+      "o": [
+       "De stoommachine",
+       "De drukpers",
+       "De computer",
+       "De windmolen"
+      ],
+      "x": "De verbeterde stoommachine van James Watt (1769) dreef fabrieken, treinen en schepen aan."
+     }
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "chapter": "modern",
+   "sort": 36,
+   "yr": 1914,
+   "emoji": "🕊️",
+   "rarity": "epic",
+   "img": null,
+   "en": {
+    "w": "1914–1945",
+    "ti": "The World Wars",
+    "tx": "World War I (1914–1918) and World War II (1939–1945) caused tens of millions of deaths and redrew the world map. After 1945 the United Nations was founded to keep peace."
+   },
+   "nl": {
+    "w": "1914–1945",
+    "ti": "De wereldoorlogen",
+    "tx": "De Eerste (1914–1918) en Tweede Wereldoorlog (1939–1945) eisten tientallen miljoenen levens en tekenden de wereldkaart opnieuw. Na 1945 werden de Verenigde Naties opgericht om de vrede te bewaren."
+   },
+   "questions": [
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did World War II end?",
+      "o": [
+       "1945",
+       "1918",
+       "1939",
+       "1950"
+      ],
+      "x": "1945."
+     },
+     "nl": {
+      "q": "In welk jaar eindigde de Tweede Wereldoorlog?",
+      "o": [
+       "1945",
+       "1918",
+       "1939",
+       "1950"
+      ],
+      "x": "1945."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which organisation was founded after World War II to keep the peace?",
+      "o": [
+       "The United Nations",
+       "The League of Nations",
+       "The Red Cross",
+       "The Hanseatic League"
+      ],
+      "x": "The United Nations, in 1945. The League of Nations dated from after World War I."
+     },
+     "nl": {
+      "q": "Welke organisatie werd na de Tweede Wereldoorlog opgericht om de vrede te bewaren?",
+      "o": [
+       "De Verenigde Naties",
+       "De Volkenbond",
+       "Het Rode Kruis",
+       "De Hanze"
+      ],
+      "x": "De Verenigde Naties, in 1945. De Volkenbond dateerde van na de Eerste Wereldoorlog."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "World War I begins",
+       "World War I ends",
+       "World War II begins",
+       "The United Nations is founded"
+      ],
+      "x": "1914, 1918, 1939 and 1945."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "De Eerste Wereldoorlog begint",
+       "De Eerste Wereldoorlog eindigt",
+       "De Tweede Wereldoorlog begint",
+       "De Verenigde Naties worden opgericht"
+      ],
+      "x": "1914, 1918, 1939 en 1945."
+     }
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "chapter": "modern",
+   "sort": 37,
+   "yr": 1947,
+   "emoji": "🗺️",
+   "rarity": "rare",
+   "img": null,
+   "en": {
+    "w": "1947–1975",
+    "ti": "Decolonisation",
+    "tx": "In 1945 much of Africa and Asia was still ruled by European colonial powers. In 1947 India and Pakistan became independent from Britain, after a largely non-violent campaign led by Mahatma Gandhi. In 1960, the 'Year of Africa', seventeen African countries gained independence, among them the present-day Democratic Republic of the Congo, from Belgium. Within a few decades dozens of new states had joined the United Nations."
+   },
+   "nl": {
+    "w": "1947–1975",
+    "ti": "Dekolonisatie",
+    "tx": "In 1945 werd een groot deel van Afrika en Azië nog bestuurd door Europese koloniale mogendheden. In 1947 werden India en Pakistan onafhankelijk van Groot-Brittannië, na een grotendeels geweldloze campagne onder leiding van Mahatma Gandhi. In 1960, het 'Jaar van Afrika', werden zeventien Afrikaanse landen onafhankelijk, waaronder de huidige Democratische Republiek Congo, van België. In enkele decennia traden tientallen nieuwe staten toe tot de Verenigde Naties."
+   },
+   "questions": [
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did India become independent?",
+      "o": [
+       "1947",
+       "1918",
+       "1960",
+       "1989"
+      ],
+      "x": "On 15 August 1947."
+     },
+     "nl": {
+      "q": "In welk jaar werd India onafhankelijk?",
+      "o": [
+       "1947",
+       "1918",
+       "1960",
+       "1989"
+      ],
+      "x": "Op 15 augustus 1947."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "Why is 1960 called the 'Year of Africa'?",
+      "o": [
+       "Seventeen African countries became independent",
+       "The first Africa Cup was played",
+       "Africa was united into one state",
+       "The Sahara was crossed for the first time"
+      ],
+      "x": "Among them Nigeria, Senegal, Somalia and the DR Congo."
+     },
+     "nl": {
+      "q": "Waarom heet 1960 het 'Jaar van Afrika'?",
+      "o": [
+       "Zeventien Afrikaanse landen werden onafhankelijk",
+       "De eerste Afrika Cup werd gespeeld",
+       "Afrika werd verenigd in één staat",
+       "De Sahara werd voor het eerst doorkruist"
+      ],
+      "x": "Onder meer Nigeria, Senegal, Somalië en de DR Congo."
+     }
+    },
+    {
+     "type": "mc",
+     "en": {
+      "q": "From which country did the present-day Democratic Republic of the Congo become independent in 1960?",
+      "o": [
+       "Belgium",
+       "Germany",
+       "Portugal",
+       "Britain"
+      ],
+      "x": "On 30 June 1960."
+     },
+     "nl": {
+      "q": "Van welk land werd de huidige Democratische Republiek Congo in 1960 onafhankelijk?",
+      "o": [
+       "België",
+       "Duitsland",
+       "Portugal",
+       "Groot-Brittannië"
+      ],
+      "x": "Op 30 juni 1960."
+     }
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "chapter": "modern",
+   "sort": 38,
+   "yr": 1948,
+   "emoji": "🧱",
+   "rarity": "common",
+   "img": null,
+   "en": {
+    "w": "1947–1991",
+    "ti": "The Cold War",
+    "tx": "After 1945 two superpowers, the United States and the Soviet Union, faced each other with opposing systems: capitalism and communism. They never fought each other directly, but competed through an arms race, wars in other countries and the space race. From 1961 the Berlin Wall divided the city in two. The Wall fell in 1989 and the Soviet Union broke up in 1991."
+   },
+   "nl": {
+    "w": "1947–1991",
+    "ti": "De Koude Oorlog",
+    "tx": "Na 1945 stonden twee supermachten, de Verenigde Staten en de Sovjet-Unie, tegenover elkaar met tegengestelde systemen: kapitalisme en communisme. Ze vochten nooit rechtstreeks tegen elkaar, maar wedijverden via een wapenwedloop, oorlogen in andere landen en de ruimtewedloop. Vanaf 1961 verdeelde de Berlijnse Muur de stad in twee. De Muur viel in 1989 en de Sovjet-Unie viel in 1991 uiteen."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Which two superpowers faced each other in the Cold War?",
+      "o": [
+       "The United States and the Soviet Union",
+       "Britain and France",
+       "China and Japan",
+       "Germany and Italy"
+      ],
+      "x": "Each led a bloc of allies: NATO and the Warsaw Pact."
+     },
+     "nl": {
+      "q": "Welke twee supermachten stonden in de Koude Oorlog tegenover elkaar?",
+      "o": [
+       "De Verenigde Staten en de Sovjet-Unie",
+       "Groot-Brittannië en Frankrijk",
+       "China en Japan",
+       "Duitsland en Italië"
+      ],
+      "x": "Elk leidde een blok bondgenoten: de NAVO en het Warschaupact."
+     }
+    },
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did the Berlin Wall fall?",
+      "o": [
+       "1989",
+       "1961",
+       "1945",
+       "1991"
+      ],
+      "x": "On 9 November 1989. The Wall had been built in 1961."
+     },
+     "nl": {
+      "q": "In welk jaar viel de Berlijnse Muur?",
+      "o": [
+       "1989",
+       "1961",
+       "1945",
+       "1991"
+      ],
+      "x": "Op 9 november 1989. De Muur was in 1961 gebouwd."
+     }
+    },
+    {
+     "type": "tf",
+     "answer": false,
+     "en": {
+      "q": "The United States and the Soviet Union fought each other directly in a great war.",
+      "x": "That is why it is called a 'cold' war: the two never fought each other directly."
+     },
+     "nl": {
+      "q": "De Verenigde Staten en de Sovjet-Unie vochten rechtstreeks tegen elkaar in een grote oorlog.",
+      "x": "Daarom heet het een 'koude' oorlog: de twee vochten nooit rechtstreeks tegen elkaar."
+     }
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "chapter": "modern",
+   "sort": 39,
+   "yr": 1969,
+   "emoji": "🚀",
+   "rarity": "legendary",
+   "img": null,
+   "en": {
+    "w": "1969 – today",
+    "ti": "The digital age",
+    "tx": "Humans first walked on the Moon in 1969. Tim Berners-Lee invented the World Wide Web at CERN around 1989–1991, and the internet and AI now shape daily life."
+   },
+   "nl": {
+    "w": "1969 – vandaag",
+    "ti": "Het digitale tijdperk",
+    "tx": "In 1969 betraden mensen voor het eerst de maan. Tim Berners-Lee vond rond 1989–1991 het World Wide Web uit bij CERN, en internet en AI bepalen nu het dagelijks leven."
+   },
+   "questions": [
+    {
+     "type": "mc",
+     "en": {
+      "q": "Who invented the World Wide Web?",
+      "o": [
+       "Tim Berners-Lee",
+       "Bill Gates",
+       "Steve Jobs",
+       "Alan Turing"
+      ],
+      "x": "Tim Berners-Lee, at CERN in Switzerland."
+     },
+     "nl": {
+      "q": "Wie vond het World Wide Web uit?",
+      "o": [
+       "Tim Berners-Lee",
+       "Bill Gates",
+       "Steve Jobs",
+       "Alan Turing"
+      ],
+      "x": "Tim Berners-Lee, bij CERN in Zwitserland."
+     }
+    },
+    {
+     "type": "year",
+     "en": {
+      "q": "In which year did humans first walk on the Moon?",
+      "o": [
+       "1969",
+       "1957",
+       "1989",
+       "2001"
+      ],
+      "x": "On 20 July 1969, with Apollo 11."
+     },
+     "nl": {
+      "q": "In welk jaar liepen mensen voor het eerst op de maan?",
+      "o": [
+       "1969",
+       "1957",
+       "1989",
+       "2001"
+      ],
+      "x": "Op 20 juli 1969, met Apollo 11."
+     }
+    },
+    {
+     "type": "order",
+     "en": {
+      "q": "Put these in order, from earliest to latest.",
+      "o": [
+       "The Industrial Revolution begins",
+       "World War II ends",
+       "The first humans walk on the Moon",
+       "The World Wide Web is invented"
+      ],
+      "x": "About 1760, 1945, 1969 and 1989."
+     },
+     "nl": {
+      "q": "Zet in de juiste volgorde, van vroegst naar laatst.",
+      "o": [
+       "De industriële revolutie begint",
+       "De Tweede Wereldoorlog eindigt",
+       "De eerste mensen lopen op de maan",
+       "Het World Wide Web wordt uitgevonden"
+      ],
+      "x": "Ongeveer 1760, 1945, 1969 en 1989."
+     }
+    }
+   ]
+  }
+ ]
+}
