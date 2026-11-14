@@ -43,9 +43,9 @@ alter table public.user_roles enable row level security;
 alter table public.progress   enable row level security;
 alter table public.stats      enable row level security;
 
--- Everyone (also logged-out visitors) can read content; only admins change it.
-create policy "read chapters" on public.chapters for select using (true);
-create policy "read lessons"  on public.lessons  for select using (true);
+-- Only logged-in users can read content; only admins change it.
+create policy "read chapters" on public.chapters for select to authenticated using (true);
+create policy "read lessons"  on public.lessons  for select to authenticated using (true);
 create policy "admin writes chapters" on public.chapters for all using (public.is_admin()) with check (public.is_admin());
 create policy "admin writes lessons"  on public.lessons  for all using (public.is_admin()) with check (public.is_admin());
 
@@ -57,8 +57,9 @@ create policy "own progress" on public.progress for all using (user_id = auth.ui
 create policy "own stats"    on public.stats    for all using (user_id = auth.uid()) with check (user_id = auth.uid());
 
 grant usage on schema public to anon, authenticated;
-grant select on public.chapters, public.lessons to anon, authenticated;
+grant select on public.chapters, public.lessons to authenticated;
 grant insert, update, delete on public.chapters, public.lessons to authenticated;
 grant select on public.user_roles to authenticated;
 grant select, insert, update, delete on public.progress, public.stats to authenticated;
-grant execute on function public.is_admin() to anon, authenticated;
+revoke execute on function public.is_admin() from public, anon;
+grant execute on function public.is_admin() to authenticated;

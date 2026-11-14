@@ -18,5 +18,6 @@ select id, 'admin' from auth.users where email = 'JOUW_EMAIL';
 3. Herlaad de site: tabblad **Admin** verschijnt. Daar kun je lessen toevoegen, bewerken en verwijderen (EN, NL of beide).
 
 ## Hoe het werkt
-- Iedereen (ook uitgelogd) leest de lessen. Voortgang, XP en streak worden alleen bewaard voor ingelogde gebruikers (tabellen `progress` en `stats`, per gebruiker afgeschermd).
+- Inloggen is verplicht: uitgelogde bezoekers zien enkel het loginscherm en kunnen de lessen ook niet via de API lezen. De sessie wordt in de browser bewaard, dus je blijft ingelogd. Voortgang, XP en streak staan per gebruiker in `progress` en `stats`.
+- Een les toont eerst de uitleg; na "Verder" zie je alleen nog de vraag.
 - Alleen gebruikers met rol `admin` kunnen `chapters` en `lessons` wijzigen. Rollen kunnen niet via de website geschreven worden.

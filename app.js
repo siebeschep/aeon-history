@@ -11,15 +11,15 @@ const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
 
 const UI = {
  en:{timeline:"Timeline",cards:"Cards",admin:"Admin",login:"Log in",logout:"Log out",signup:"Create account",email:"Email",password:"Password (min. 6 characters)",
-  haveAcc:"I already have an account",noAcc:"Create a new account",guest:"You are not logged in: progress is not saved.",goal:"Daily goal",lessons:"lessons",total:"Overall",
-  start:"Start quiz",next:"Next lesson",ok:"Correct!",wrong:"Not quite",again:"Try again",unlocked:"Card unlocked",back:"← Back to timeline",tl:"Back to timeline",
+  haveAcc:"I already have an account",noAcc:"Create a new account",guest:"",goal:"Daily goal",lessons:"lessons",total:"Overall",
+  start:"Continue",next:"Next lesson",ok:"Correct!",wrong:"Not quite",again:"Try again",unlocked:"Card unlocked",back:"← Back to timeline",tl:"Back to timeline",
   collection:"Your collection",locked:"Locked",open:"Open",loading:"Loading…",confirm:"Check your email to confirm your account, then log in.",
   newL:"New lesson",editL:"Edit lesson",chapter:"Chapter",when:"When",title:"Title",text:"Explanation",q:"Question",o1:"Correct answer",o2:"Wrong answer 1",o3:"Wrong answer 2",o4:"Wrong answer 3",x:"Why is it correct? (optional)",
   save:"Save lesson",cancel:"Cancel",edit:"Edit",del:"Delete",allLessons:"All lessons",fillBoth:"Fill in every field of a language (or leave that language empty).",needOne:"Fill in at least one language.",saved:"Saved.",failed:"Could not save: ",delAsk:"Delete this lesson for everyone?",
   setup:"Setup needed: fill in SUPABASE_URL and SUPABASE_ANON_KEY in config.js.",loadErr:"Could not load lessons: ",langNote:"Fill in English, Dutch or both. A missing language falls back to the other."},
  nl:{timeline:"Tijdlijn",cards:"Kaarten",admin:"Beheer",login:"Inloggen",logout:"Uitloggen",signup:"Account maken",email:"E-mail",password:"Wachtwoord (min. 6 tekens)",
-  haveAcc:"Ik heb al een account",noAcc:"Nieuw account maken",guest:"Je bent niet ingelogd: voortgang wordt niet bewaard.",goal:"Dagdoel",lessons:"lessen",total:"Totaal",
-  start:"Start quiz",next:"Volgende les",ok:"Juist!",wrong:"Niet helemaal",again:"Opnieuw",unlocked:"Kaart ontgrendeld",back:"← Terug naar tijdlijn",tl:"Terug naar tijdlijn",
+  haveAcc:"Ik heb al een account",noAcc:"Nieuw account maken",guest:"",goal:"Dagdoel",lessons:"lessen",total:"Totaal",
+  start:"Verder",next:"Volgende les",ok:"Juist!",wrong:"Niet helemaal",again:"Opnieuw",unlocked:"Kaart ontgrendeld",back:"← Terug naar tijdlijn",tl:"Terug naar tijdlijn",
   collection:"Jouw collectie",locked:"Vergrendeld",open:"Open",loading:"Laden…",confirm:"Check je e-mail om je account te bevestigen en log daarna in.",
   newL:"Nieuwe les",editL:"Les bewerken",chapter:"Hoofdstuk",when:"Wanneer",title:"Titel",text:"Uitleg",q:"Vraag",o1:"Juist antwoord",o2:"Fout antwoord 1",o3:"Fout antwoord 2",o4:"Fout antwoord 3",x:"Waarom is het juist? (optioneel)",
   save:"Les opslaan",cancel:"Annuleren",edit:"Bewerk",del:"Verwijder",allLessons:"Alle lessen",fillBoth:"Vul alle velden van een taal in (of laat die taal leeg).",needOne:"Vul minstens één taal in.",saved:"Opgeslagen.",failed:"Opslaan mislukt: ",delAsk:"Deze les voor iedereen verwijderen?",
@@ -47,7 +47,7 @@ if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
   $root.innerHTML = `<div class="auth"><div class="card"><h2>⏳ Aeon</h2><p>${esc(UI.en.setup)}<br><br>${esc(UI.nl.setup)}</p></div></div>`;
   throw new Error("Supabase not configured");
 }
-const sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {auth: {persistSession: true, autoRefreshToken: true}});
 
 /* ---------- data ---------- */
 async function loadContent() {
@@ -140,11 +140,12 @@ async function deleteLesson(id) {
 
 /* ---------- views ---------- */
 function vTop() {
+  if (!st.user) return `<div class="top"><span class="logo">⏳ Aeon</span><div class="tabs"></div><button class="lang" data-act="lang">${st.lang.toUpperCase()}</button></div>`;
   const tabs = [["timeline", t("timeline")], ["cards", t("cards")]].concat(st.isAdmin ? [["admin", t("admin")]] : []);
   const s = st.stats;
   return `<div class="top"><span class="logo">⏳ Aeon</span><div class="tabs">${tabs.map(([k, n]) => `<button class="tab ${st.v.tab === k ? "on" : ""}" data-act="tab" data-v="${k}">${n}</button>`).join("")}</div>
   <span class="pill fire">🔥 ${s.streak}</span><span class="pill xp">⭐ ${s.xp}</span><button class="lang" data-act="lang">${st.lang.toUpperCase()}</button>
-  ${st.user ? `<button class="lang" data-act="logout">${t("logout")}</button>` : `<button class="lang" data-act="tab" data-v="auth">${t("login")}</button>`}</div>`;
+  <button class="lang" data-act="logout">${t("logout")}</button></div>`;
 }
 function vSide() {
   const all = ordered(), done = all.filter(l => st.done.has(l.id)).length, s = st.stats;
@@ -162,22 +163,21 @@ function vTimeline() {
 function vLesson() {
   const v = st.v, l = st.lessons.find(x => x.id === v.lessonId); if (!l) return vTimeline();
   const d = gl(l), c = chOf(l.chapter);
-  const left = `<div class="card"><span class="when" style="--c:${esc(c.color)}">${esc(c.emoji)} ${esc(chName(c))} · ${esc(d.w)}</span><h2>${esc(d.ti)}</h2><p>${esc(d.tx)}</p></div>`;
-  let right;
-  if (!v.order.length) right = `<div class="card q"><h2>🧠 Quiz</h2><p>${esc(d.q)}</p><button class="btn" data-act="start">${t("start")}</button></div>`;
-  else {
-    const opts = v.order.map((oi, i) => { let k = "opt"; if (v.picked !== null) { if (oi === 0) k += " ok"; else if (i === v.picked) k += " bad"; } return `<button class="${k}" ${v.picked !== null ? "disabled" : ""} data-act="pick" data-i="${i}">${esc(d.o[oi])}</button>`; }).join("");
-    let foot = "";
-    if (v.picked !== null) {
-      const right_ = v.order[v.picked] === 0, a = ordered(), nx = a[a.findIndex(x => x.id === l.id) + 1];
-      const correct = d.o[0];
-      foot = right_
-        ? `<div class="fb ok"><div><div class="fbt">✅ ${t("ok")}</div><div class="fbx">${esc(d.x)}</div></div><div class="fbb"><button class="btn sec" data-act="home">${t("tl")}</button>${nx ? `<button class="btn" data-act="open" data-id="${esc(nx.id)}">${t("next")}</button>` : ""}</div></div>`
-        : `<div class="fb bad"><div><div class="fbt">❌ ${t("wrong")}</div><div class="fbx">${esc(correct)}${d.x ? " — " + esc(d.x) : ""}</div></div><div class="fbb"><button class="btn sec" data-act="home">${t("tl")}</button><button class="btn red" data-act="start">${t("again")}</button></div></div>`;
-    }
-    right = `<div class="card q"><h2>${esc(d.q)}</h2>${opts}</div>${foot}`;
+  const back = `<button class="back" data-act="home">${t("back")}</button>`;
+  if (!v.order.length) {
+    // phase 1: read the lesson card, then continue
+    return `${back}<div class="narrow" style="--c:${esc(c.color)}"><div class="card"><span class="when">${esc(c.emoji)} ${esc(chName(c))} · ${esc(d.w)}</span><h2>${esc(d.ti)}</h2><p>${esc(d.tx)}</p></div><button class="btn" data-act="start">${t("start")}</button></div>`;
   }
-  return `<button class="back" data-act="home">${t("back")}</button><div class="split" style="--c:${esc(c.color)}">${left}${right}</div>`;
+  // phase 2: question only, the lesson text is no longer visible
+  const opts = v.order.map((oi, i) => { let k = "opt"; if (v.picked !== null) { if (oi === 0) k += " ok"; else if (i === v.picked) k += " bad"; } return `<button class="${k}" ${v.picked !== null ? "disabled" : ""} data-act="pick" data-i="${i}">${esc(d.o[oi])}</button>`; }).join("");
+  let foot = "";
+  if (v.picked !== null) {
+    const right_ = v.order[v.picked] === 0, a = ordered(), nx = a[a.findIndex(x => x.id === l.id) + 1];
+    foot = right_
+      ? `<div class="fb ok"><div><div class="fbt">✅ ${t("ok")}</div><div class="fbx">${esc(d.x)}</div></div><div class="fbb"><button class="btn sec" data-act="home">${t("tl")}</button>${nx ? `<button class="btn" data-act="open" data-id="${esc(nx.id)}">${t("next")}</button>` : ""}</div></div>`
+      : `<div class="fb bad"><div><div class="fbt">❌ ${t("wrong")}</div><div class="fbx">${esc(d.o[0])}${d.x ? " — " + esc(d.x) : ""}</div></div><div class="fbb"><button class="btn sec" data-act="home">${t("tl")}</button><button class="btn red" data-act="start">${t("again")}</button></div></div>`;
+  }
+  return `${back}<div class="narrow" style="--c:${esc(c.color)}"><div class="card q"><span class="when">${esc(c.emoji)} ${esc(chName(c))}</span><h2 style="margin-top:14px">${esc(d.q)}</h2>${opts}</div></div>${foot}`;
 }
 function vCards() {
   const all = ordered();
@@ -213,15 +213,14 @@ function vAuth() {
 }
 function render() {
   const v = st.v;
+  if (!st.loaded) { $root.innerHTML = vTop() + `<main class="main"><p class="note">${t("loading")}</p></main>`; return; }
+  if (!st.user) { $root.innerHTML = vTop() + vAuth(); return; }
   let main;
-  if (!st.loaded) main = `<p class="note">${t("loading")}</p>`;
-  else if (st.error) main = `<p class="note err">${t("loadErr")}${esc(st.error)}</p>`;
-  else if (v.tab === "auth") main = vAuth();
+  if (st.error) main = `<p class="note err">${t("loadErr")}${esc(st.error)}</p>`;
   else if (v.tab === "cards") main = vCards();
   else if (v.tab === "admin" && st.isAdmin) main = vAdmin();
   else main = v.lessonId ? vLesson() : vTimeline();
-  const warn = !st.user && v.tab !== "auth" ? `<div class="warn">${t("guest")} <button class="link" data-act="tab" data-v="auth" style="margin:0 0 0 8px">${t("login")}</button></div>` : "";
-  $root.innerHTML = vTop() + `<div class="layout">${st.loaded && !st.error ? vSide() : "<div></div>"}<main class="main ${v.picked !== null && v.lessonId ? "pad" : ""}">${warn}${main}</main></div>`;
+  $root.innerHTML = vTop() + `<div class="layout">${st.error ? "<div></div>" : vSide()}<main class="main ${v.picked !== null && v.lessonId ? "pad" : ""}">${main}</main></div>`;
 }
 
 /* ---------- events ---------- */
@@ -258,18 +257,20 @@ document.addEventListener("click", async e => {
 });
 
 /* ---------- boot ---------- */
+// The session is stored by supabase-js in localStorage and refreshed automatically,
+// so a returning visitor stays logged in.
+async function refresh(force) {
+  const {data} = await sb.auth.getSession();
+  const u = data.session ? data.session.user : null;
+  if (!force && st.loaded && ((u && st.user && u.id === st.user.id) || (!u && !st.user))) return;
+  await loadUser();
+  if (st.user) await loadContent(); else { st.chapters = []; st.lessons = []; st.v.lessonId = null; st.v.tab = "timeline"; }
+  if (st.v.tab === "admin" && !st.isAdmin) st.v.tab = "timeline";
+  st.loaded = true;
+  render();
+}
 sb.auth.onAuthStateChange((event) => {
-  if (event === "SIGNED_IN" || event === "SIGNED_OUT") {
-    // defer: awaiting Supabase calls inside this callback can deadlock the client
-    setTimeout(async () => {
-      await loadUser();
-      if (st.v.tab === "admin" && !st.isAdmin) st.v.tab = "timeline";
-      render();
-    }, 0);
-  }
+  if (event === "SIGNED_IN" || event === "SIGNED_OUT") setTimeout(() => refresh(false), 0); // defer: avoid deadlock inside the callback
 });
 render();
-await loadContent();
-await loadUser();
-st.loaded = true;
-render();
+await refresh(true);
