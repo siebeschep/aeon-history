@@ -243,7 +243,7 @@ document.addEventListener("click", async e => {
       const {error} = await sb.auth.signInWithPassword({email, password});
       if (error) setMsg(error.message, "err"); else { v.tab = "timeline"; v.msg = ""; }
     } else {
-      const {data, error} = await sb.auth.signUp({email, password});
+      const {data, error} = await sb.auth.signUp({email, password, options: {emailRedirectTo: location.origin + location.pathname}});
       if (error) setMsg(error.message, "err");
       else if (!data.session) { v.authMode = "login"; setMsg(t("confirm"), "good"); render(); }
       else { v.tab = "timeline"; v.msg = ""; }
